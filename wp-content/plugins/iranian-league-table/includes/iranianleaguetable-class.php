@@ -56,8 +56,6 @@
   
       ?>
       
-      
-      
       <!-- TITLE -->
       <p>
         <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>">
