@@ -134,10 +134,10 @@
           class="widefat" 
           id="<?php echo esc_attr( $this->get_field_id( 'logo' ) ); ?>" 
           name="<?php echo esc_attr( $this->get_field_name( 'logo' ) ); ?>">
-          <option value="true" <?php echo ($layout == 'true') ? 'selected' : ''; ?>>
+          <option value="true" <?php echo ($logo == 'true') ? 'selected' : ''; ?>>
             <?php esc_attr_e( 'Yes', 'ilt_domain' ) ?>
           </option>
-          <option value="false" <?php echo ($layout == 'false') ? 'selected' : ''; ?>>
+          <option value="false" <?php echo ($logo == 'false') ? 'selected' : ''; ?>>
             <?php esc_attr_e( 'No', 'ilt_domain' ) ?>
           </option>
         </select>
