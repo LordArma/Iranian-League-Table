@@ -1,4 +1,5 @@
-name: Create and Commit Plugin ZIP
+
+name: Create ZIP Plugin
 
 on:
   push:
@@ -13,25 +14,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          persist-credentials: false  # Important for push permissions
 
       - name: Create ZIP archive
         run: |
           cd wp-content/plugins
           zip -r ../../iranian-league-table.zip iranian-league-table
 
-      - name: Commit and push ZIP file
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Configure Git
-          git config --global user.email "arma@jangal.co"
-          git config --global user.name "Arma"
-
-          # Add and commit the ZIP file
-          git add iranian-league-table.zip
-          git commit -m "chore: Update plugin ZIP file [skip ci]"
-
-          # Push changes
-          git push origin HEAD:master
+      - name: Upload ZIP artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: iranian-league-table.zip
+          path: iranian-league-table.zip
