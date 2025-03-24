@@ -29,7 +29,7 @@
       }
 
       // Widget Content Output
-      echo '<div class="vaz3-table" data-sportype="Football" style="direction: rtl;" data-url="'.$instance['league'].'" data-lt="لیگ آزادگان" data-wv="'.$instance['table_type'].'" data-bw="0" data-bc="#eee" data-tc="#212121" data-tbgc="#eee" data-thc="#fff" data-thbgc="'.$instance['title_color'].'" data-tdc="'.$instance['text_color'].'" data-tdac="'.$instance['text_color'].'" data-oddbgc="'.$instance['odd_color'].'" data-evbgc="'.$instance['even_color'].'" data-lw="'.$instance['logo_size'].'" data-ld="'.$instance['logo'].'" data-tlv="false" data-tshv="false"  ></div><script type="text/javascript" language="javascript" src="https://static.varzesh3.com/js/developers-varzesh3.js?v=1.0.0" ></script>';
+      echo '<div class="vaz3-table" data-sportype="Football" style="direction: rtl;" data-url="'.$instance['league'].'" data-lt="لیگ آزادگان" data-wv="'.$instance['table_type'].'" data-bw="0" data-bc="#eee" data-tc="#212121" data-tbgc="#eee" data-thc="#fff" data-thbgc="'.$instance['title_color'].'" data-tdc="'.$instance['text_color'].'" data-tdac="'.$instance['text_color'].'" data-oddbgc="'.$instance['odd_color'].'" data-evbgc="'.$instance['even_color'].'" data-lw="'.$instance['logo_size'].'" data-ld="'.$instance['logo'].'" data-tlv="false" data-tshv="false"  ></div>';
 
       echo $args['after_widget']; // Whatever you want to display after widget (</div>, etc)
     }
