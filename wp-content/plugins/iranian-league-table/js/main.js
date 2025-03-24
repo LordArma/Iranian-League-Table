@@ -74,7 +74,7 @@ var url,
                             "beforeend",
                             '<tr><td>' +
                                 (e + 1) +
-                                ' </td><td style="text-align:right;width: 60px;"><figure><img style="max-width:100%;" src="' +
+                                ' </td><td style="text-align:right;"><figure style="margin-right: 2px;"><img style="max-width:100%;" src="' +
                                 t.logo +
                                 '"></figure><span style="margin-right: 3px;">' +
                                 t.name +
