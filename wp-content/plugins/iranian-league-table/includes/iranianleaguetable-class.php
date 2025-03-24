@@ -81,10 +81,10 @@
           id="<?php echo esc_attr( $this->get_field_id( 'league' ) ); ?>" 
           name="<?php echo esc_attr( $this->get_field_name( 'league' ) ); ?>">
           <option value="https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing" <?php echo ($layout == 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing') ? 'selected' : ''; ?>>
-            Persian Gulf
+            <?php esc_attr_e( 'Persian Gulf', 'ilt_domain' ) ?>
           </option>
           <option value="https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing" <?php echo ($layout == 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing') ? 'selected' : ''; ?>>
-            League One
+            <?php esc_attr_e( 'League One', 'ilt_domain' ) ?>
           </option>
         </select>
       </p>
@@ -100,10 +100,10 @@
           id="<?php echo esc_attr( $this->get_field_id( 'table_type' ) ); ?>" 
           name="<?php echo esc_attr( $this->get_field_name( 'table_type' ) ); ?>">
           <option value="basic" <?php echo ($layout == 'basic') ? 'selected' : ''; ?>>
-            Basic
+          <?php esc_attr_e( 'Basic', 'ilt_domain' ) ?>
           </option>
           <option value="advanced" <?php echo ($layout == 'advanced') ? 'selected' : ''; ?>>
-            Advanced
+            <?php esc_attr_e( 'Advanced', 'ilt_domain' ) ?>
           </option>
         </select>
       </p>
@@ -133,10 +133,10 @@
           id="<?php echo esc_attr( $this->get_field_id( 'logo' ) ); ?>" 
           name="<?php echo esc_attr( $this->get_field_name( 'logo' ) ); ?>">
           <option value="true" <?php echo ($layout == 'true') ? 'selected' : ''; ?>>
-            Yes
+            <?php esc_attr_e( 'Yes', 'ilt_domain' ) ?>
           </option>
           <option value="false" <?php echo ($layout == 'false') ? 'selected' : ''; ?>>
-            No
+            <?php esc_attr_e( 'No', 'ilt_domain' ) ?>
           </option>
         </select>
       </p>

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Iranian League Table\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-24 02:52+0000\n"
-"PO-Revision-Date: 2025-03-24 02:55+0000\n"
+"PO-Revision-Date: 2025-03-24 03:52+0000\n"
 "Last-Translator: \n"
 "Language-Team: فارسی\n"
 "Language: fa_IR\n"
@@ -15,11 +15,19 @@ msgstr ""
 "X-Loco-Version: 2.7.1; wp-6.7.2\n"
 "X-Domain: ilt_domain"
 
+#: includes/iranianleaguetable-class.php:106
+msgid "Advanced"
+msgstr "پیشرفته"
+
 #. Author of the plugin
 msgid "Arma"
 msgstr "آرما"
 
-#: includes/iranianleaguetable-class.php:207
+#: includes/iranianleaguetable-class.php:103
+msgid "Basic"
+msgstr "پایه"
+
+#: includes/iranianleaguetable-class.php:203
 msgid "Border Size:"
 msgstr "اندازه حاشیه:"
 
@@ -29,7 +37,7 @@ msgid ""
 "League One (Azadegan League) table in Farsi as a widget."
 msgstr "نمایش جدول لیگ برتر (خلیج فارس) و لیگ یک (لیگ آزادگان) به صورت ویجت."
 
-#: includes/iranianleaguetable-class.php:193
+#: includes/iranianleaguetable-class.php:189
 msgid "Even Rows Color:"
 msgstr "رنگ سطرهای زوج:"
 
@@ -43,46 +51,62 @@ msgstr "https://LordArma.com"
 
 #. Base ID
 #. Name of the plugin
-#: includes/iranianleaguetable-class.php:13
+#: includes/iranianleaguetable-class.php:11
 msgid "Iranian League Table"
 msgstr "جدول لیگ ایران"
 
-#: includes/iranianleaguetable-class.php:80
+#: includes/iranianleaguetable-class.php:76
 msgid "LEAGUE NAME:"
 msgstr "نام لیگ:"
 
-#: includes/iranianleaguetable-class.php:151
+#: includes/iranianleaguetable-class.php:87
+msgid "League One"
+msgstr "لیگ یک"
+
+#: includes/iranianleaguetable-class.php:147
 msgid "Logo Size:"
 msgstr "اندازه لوگو:"
 
-#: includes/iranianleaguetable-class.php:179
+#: includes/iranianleaguetable-class.php:139
+msgid "No"
+msgstr "خیر"
+
+#: includes/iranianleaguetable-class.php:175
 msgid "Odd Rows Color:"
 msgstr "رنگ سطرهای فرد:"
 
-#: includes/iranianleaguetable-class.php:48
+#: includes/iranianleaguetable-class.php:84
+msgid "Persian Gulf"
+msgstr "خلیج فارس"
+
+#: includes/iranianleaguetable-class.php:46
 msgid "Persian Gulf League"
 msgstr "لیگ خلیج فارس"
 
-#: includes/iranianleaguetable-class.php:132
+#: includes/iranianleaguetable-class.php:128
 msgid "Show Logo:"
 msgstr "نمایش لوگو:"
 
-#: includes/iranianleaguetable-class.php:99
+#: includes/iranianleaguetable-class.php:95
 msgid "Table Type:"
 msgstr "نوع جدول:"
 
-#: includes/iranianleaguetable-class.php:165
+#: includes/iranianleaguetable-class.php:161
 msgid "Text Color:"
 msgstr "رنگ متن:"
 
-#: includes/iranianleaguetable-class.php:118
+#: includes/iranianleaguetable-class.php:114
 msgid "Title Color:"
 msgstr "رنگ عنوان:"
 
-#: includes/iranianleaguetable-class.php:66
+#: includes/iranianleaguetable-class.php:62
 msgid "Title:"
 msgstr "عنوان:"
 
-#: includes/iranianleaguetable-class.php:14
+#: includes/iranianleaguetable-class.php:12
 msgid "Widget to display Iranian leagues table"
 msgstr "ویجتی برای نمایش جدول لیگ ایران"
+
+#: includes/iranianleaguetable-class.php:136
+msgid "Yes"
+msgstr "بله"
