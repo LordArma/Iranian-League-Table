@@ -1,7 +1,5 @@
 <?php
-/**
- * Adds Iranian league table widget.
- */
+
  class Iranian_League_Widget extends WP_Widget {
   
     /**
