@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Iranian League Table\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-24 02:52+0000\n"
+"PO-Revision-Date: 2025-03-24 02:55+0000\n"
+"Last-Translator: \n"
+"Language-Team: فارسی\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2\n"
+"X-Domain: ilt_domain"
+
+#. Author of the plugin
+msgid "Arma"
+msgstr "آرما"
+
+#: includes/iranianleaguetable-class.php:207
+msgid "Border Size:"
+msgstr "اندازه حاشیه:"
+
+#. Description of the plugin
+msgid ""
+"Display the Iranian Premier League (Persian Gulf League) or the Iranian "
+"League One (Azadegan League) table in Farsi as a widget."
+msgstr "نمایش جدول لیگ برتر (خلیج فارس) و لیگ یک (لیگ آزادگان) به صورت ویجت."
+
+#: includes/iranianleaguetable-class.php:193
+msgid "Even Rows Color:"
+msgstr "رنگ سطرهای زوج:"
+
+#. URI of the plugin
+msgid "https://github.com/LordArma/Iranian-League-Table"
+msgstr "https://github.com/LordArma/Iranian-League-Table"
+
+#. Author URI of the plugin
+msgid "https://LordArma.com"
+msgstr "https://LordArma.com"
+
+#. Base ID
+#. Name of the plugin
+#: includes/iranianleaguetable-class.php:13
+msgid "Iranian League Table"
+msgstr "جدول لیگ ایران"
+
+#: includes/iranianleaguetable-class.php:80
+msgid "LEAGUE NAME:"
+msgstr "نام لیگ:"
+
+#: includes/iranianleaguetable-class.php:151
+msgid "Logo Size:"
+msgstr "اندازه لوگو:"
+
+#: includes/iranianleaguetable-class.php:179
+msgid "Odd Rows Color:"
+msgstr "رنگ سطرهای فرد:"
+
+#: includes/iranianleaguetable-class.php:48
+msgid "Persian Gulf League"
+msgstr "لیگ خلیج فارس"
+
+#: includes/iranianleaguetable-class.php:132
+msgid "Show Logo:"
+msgstr "نمایش لوگو:"
+
+#: includes/iranianleaguetable-class.php:99
+msgid "Table Type:"
+msgstr "نوع جدول:"
+
+#: includes/iranianleaguetable-class.php:165
+msgid "Text Color:"
+msgstr "رنگ متن:"
+
+#: includes/iranianleaguetable-class.php:118
+msgid "Title Color:"
+msgstr "رنگ عنوان:"
+
+#: includes/iranianleaguetable-class.php:66
+msgid "Title:"
+msgstr "عنوان:"
+
+#: includes/iranianleaguetable-class.php:14
+msgid "Widget to display Iranian leagues table"
+msgstr "ویجتی برای نمایش جدول لیگ ایران"

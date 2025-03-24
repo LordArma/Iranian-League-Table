@@ -1,0 +1,89 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Iranian League Table\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-24 02:52+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2\n"
+"X-Domain: ilt_domain"
+
+#. Author of the plugin
+msgid "Arma"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:207
+msgid "Border Size:"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Display the Iranian Premier League (Persian Gulf League) or the Iranian "
+"League One (Azadegan League) table in Farsi as a widget."
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:193
+msgid "Even Rows Color:"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://github.com/LordArma/Iranian-League-Table"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://LordArma.com"
+msgstr ""
+
+#. Base ID
+#. Name of the plugin
+#: includes/iranianleaguetable-class.php:13
+msgid "Iranian League Table"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:80
+msgid "LEAGUE NAME:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:151
+msgid "Logo Size:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:179
+msgid "Odd Rows Color:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:48
+msgid "Persian Gulf League"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:132
+msgid "Show Logo:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:99
+msgid "Table Type:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:165
+msgid "Text Color:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:118
+msgid "Title Color:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:66
+msgid "Title:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:14
+msgid "Widget to display Iranian leagues table"
+msgstr ""
