@@ -240,4 +240,4 @@
       return $instance;
     }
   
-  } // class Foo_Widget
+  }
