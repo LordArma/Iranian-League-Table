@@ -6,4 +6,4 @@ The tables are displayed in Farsi and can be customized in color and display typ
 These tables are provided by the [Varzesh3](https://www.varzesh3.com/developer-tools) website.
 
 ## Download
-You can download the last version from: [here](#).
+You can download the last version from: [here](https://github.com/LordArma/Iranian-League-Table/releases).
