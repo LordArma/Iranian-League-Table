@@ -82,10 +82,10 @@
           class="widefat" 
           id="<?php echo esc_attr( $this->get_field_id( 'league' ) ); ?>" 
           name="<?php echo esc_attr( $this->get_field_name( 'league' ) ); ?>">
-          <option value="https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing" <?php echo ($layout == 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing') ? 'selected' : ''; ?>>
+          <option value="https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing" <?php echo ($league == 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing') ? 'selected' : ''; ?>>
             <?php esc_attr_e( 'Persian Gulf', 'ilt_domain' ) ?>
           </option>
-          <option value="https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing" <?php echo ($layout == 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing') ? 'selected' : ''; ?>>
+          <option value="https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing" <?php echo ($league == 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing') ? 'selected' : ''; ?>>
             <?php esc_attr_e( 'League One', 'ilt_domain' ) ?>
           </option>
         </select>
@@ -101,10 +101,10 @@
           class="widefat" 
           id="<?php echo esc_attr( $this->get_field_id( 'table_type' ) ); ?>" 
           name="<?php echo esc_attr( $this->get_field_name( 'table_type' ) ); ?>">
-          <option value="basic" <?php echo ($layout == 'basic') ? 'selected' : ''; ?>>
+          <option value="basic" <?php echo ($table_type == 'basic') ? 'selected' : ''; ?>>
           <?php esc_attr_e( 'Basic', 'ilt_domain' ) ?>
           </option>
-          <option value="advanced" <?php echo ($layout == 'advanced') ? 'selected' : ''; ?>>
+          <option value="advanced" <?php echo ($table_type == 'advanced') ? 'selected' : ''; ?>>
             <?php esc_attr_e( 'Advanced', 'ilt_domain' ) ?>
           </option>
         </select>
