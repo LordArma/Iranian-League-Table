@@ -15,12 +15,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Change Dir
-        run: |
-          cd wp-content/plugins
-
-      - name: Upload ZIP artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v4.3.3
         with:
           name: iranian-league-table
-          path: iranian-league-table
+          path: wp-content/plugins/iranian-league-table
+      
