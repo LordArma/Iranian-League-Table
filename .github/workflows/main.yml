@@ -1,4 +1,4 @@
-name: Create Plugin ZIP
+name: Create ZIP Plugin
 
 on:
   push:
@@ -20,7 +20,7 @@ jobs:
           zip -r ../../iranian-league-table.zip iranian-league-table
 
       - name: Upload ZIP artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: iranian-league-table.zip
           path: iranian-league-table.zip
