@@ -41,7 +41,7 @@ var url,
             a = document.querySelector(".vaz3-table");
         "Football" == sportType &&
             (a.innerHTML =
-                ' <h3 style="margin:0 ; padding:5px 10px;" class="table-title"></h3><div class="vaz3-table-holder"><table style="width:100%; text-align:center;" class="vaz3-standing"><thead><tr><th scope="col">\u0631\u062a\u0628\u0647</th><th scope="col">\u062a\u06cc\u0645</th><th scope="col">\u0628\u0627\u0632\u06cc</th><th class="in-detailed" scope="col">\u0628\u0631\u062f</th><th class="in-detailed" scope="col">\u0645\u0633\u0627\u0648\u06cc</th><th class="in-detailed" scope="col">\u0628\u0627\u062e\u062a</th><th class="in-detailed" scope="col"> \u06af\u0644 -/+</th><th class="in-detailed" scope="col">\u062a\u0641\u0627\u0636\u0644 </th><th scope="col">\u0627\u0645\u062a\u064a\u0627\u0632</th></tr></thead><tbody></tbody></table></div>'),
+                ' <h3 style="margin:0 ; padding:5px 8px;" class="table-title"></h3><div class="vaz3-table-holder"><table style="width:100%; text-align:center; font-size: 12px;" class="vaz3-standing"><thead><tr><th scope="col" style="width: 15%;" >\u0631\u062a\u0628\u0647</th><th scope="col" style="width: 55%;">\u062a\u06cc\u0645</th><th scope="col" >\u0628\u0627\u0632\u06cc</th><th class="in-detailed" scope="col" >\u0628\u0631\u062f</th><th class="in-detailed" scope="col" >\u0645\u0633\u0627\u0648\u06cc</th><th class="in-detailed" scope="col" >\u0628\u0627\u062e\u062a</th><th class="in-detailed" scope="col" > \u06af\u0644 -/+</th><th class="in-detailed" scope="col" >\u062a\u0641\u0627\u0636\u0644 </th><th scope="col" >\u0627\u0645\u062a\u064a\u0627\u0632</th></tr></thead><tbody></tbody></table></div>'),
             "Volleyball" == sportType &&
                 (a.innerHTML =
                     ' <h3 style="margin:0 ; padding:5px 10px;" class="table-title"></h3><div class="vaz3-table-holder"><table style="width:100%; text-align:center;" class="vaz3-standing"><thead><tr class="main-row"><th scope="col"></th><th scope="col"></th><th scope="col"></th><th class="has-border" scope="col" colspan="3">\u0645\u0633\u0627\u0628\u0642\u0627\u062a</th><th class="has-border" scope="col" colspan="6">\u062c\u0632\u0626\u06cc\u0627\u062a \u0646\u062a\u0627\u06cc\u062c</th><th class="has-border" scope="col" colspan="3">\u0633\u062a</th><th class="has-border" scope="col" colspan="3">\u067e\u0648\u0626\u0646</th></tr><tr class="secondary-row"><th>\u0631\u062a\u0628\u0647</th><th></th><th>\u0627\u0645\u062a\u06cc\u0627\u0632</th><th scope="col">\u0628\u0627\u0632\u06cc</th><th scope="col">\u0628\u0631\u062f</th><th scope="col">\u0628\u0627\u062e\u062a</th><th scope="col">3 - 0</th><th scope="col">3 - 1</th><th scope="col">3 - 2</th><th scope="col">0 - 3</th><th scope="col">1 - 3</th><th scope="col">2 - 3</th><th scope="col">\u0628\u0631\u062f\u0647</th><th scope="col">\u0628\u0627\u062e\u062a\u0647</th><th scope="col">\u0645\u0639\u062f\u0644</th><th scope="col">\u0628\u0631\u062f\u0647</th><th scope="col">\u0628\u0627\u062e\u062a\u0647</th><th scope="col">\u0645\u0639\u062f\u0644</th></tr</thead><tbody></tbody></table></div>');
@@ -61,11 +61,7 @@ var url,
             (l = t.link ? t.link : ""),
             o.insertAdjacentHTML(
                 "afterend",
-                '<a style="font-size: 11px; color: #666; display: block; text-align: right; margin-top: 7px; " href=" ' +
-                    l +
-                    ' ">\u0641\u062f\u0631\u062a \u06af\u0631\u0641\u062a\u0647 \u0627\u0632 \u062c\u062f\u0648\u0644 ' +
-                    e +
-                    " \u0648\u0631\u0632\u0634 \u0633\u0647</a>"
+                '<!-- Powered by <3 -->'
             ),
             t.teams.forEach((t, e) => {
                 var l;
@@ -73,27 +69,27 @@ var url,
                     "Football" == sportType &&
                         a.insertAdjacentHTML(
                             "beforeend",
-                            "<tr><td> " +
+                            '<tr><td>' +
                                 (e + 1) +
-                                ' </td><td style="text-align:right;"><figure><img style="max-width:100%" src="' +
+                                ' </td><td style="text-align:right;width: 60px;"><figure><img style="max-width:100%;" src="' +
                                 t.logo +
-                                '"></figure>' +
+                                '"></figure><span style="margin-right: 3px;">' +
                                 t.name +
-                                "</td><td>" +
+                                '</span></td><td>' +
                                 t.played +
-                                '</td><td class="in-detailed">' +
+                                '</td><td class="in-detailed" >' +
                                 t.wins +
-                                '</td><td class="in-detailed">' +
+                                '</td><td class="in-detailed" >' +
                                 t.draws +
-                                '</td><td class="in-detailed">' +
+                                '</td><td class="in-detailed" >' +
                                 t.losses +
-                                '</td><td class="in-detailed">' +
+                                '</td><td class="in-detailed" >' +
                                 t.goalFor +
-                                "-" +
+                                '-' +
                                 t.goalAgainst +
-                                '</td><td class="in-detailed">' +
+                                '</td><td class="in-detailed" >' +
                                 t.goalDifference +
-                                "</td><td>" +
+                                '</td><td>' +
                                 t.points +
                                 "</td></tr>"
                         ),
