@@ -29,7 +29,7 @@
       }
 
       // Widget Content Output
-      echo '<div class="vaz3-table" data-sportype="Football" style="direction: rtl;" data-url="'.$instance['league'].'" data-lt="لیگ آزادگان" data-wv="'.$instance['table_type'].'" data-bw="0" data-bc="#eee" data-tc="#212121" data-tbgc="#eee" data-thc="#fff" data-thbgc="'.$instance['title_color'].'" data-tdc="'.$instance['text_color'].'" data-tdac="'.$instance['text_color'].'" data-oddbgc="'.$instance['odd_color'].'" data-evbgc="'.$instance['even_color'].'" data-lw="'.$instance['logo_size'].'" data-ld="'.$instance['logo'].'" data-tlv="false" data-tshv="false"  ></div>';
+      echo '<div class="vaz3-table" data-sportype="Football" style="direction: rtl;" data-url="'.$instance['league'].'" data-lt="لیگ آزادگان" data-wv="'.$instance['table_type'].'" data-bw="0" data-bc="#eee" data-tc="#212121" data-tbgc="#eee" data-thc="#fff" data-thbgc="'.$instance['title_color'].'" data-tdc="'.$instance['text_color'].'" data-tdac="'.$instance['text_color'].'" data-oddbgc="'.$instance['odd_color'].'" data-evbgc="'.$instance['even_color'].'" data-lw="'.$instance['logo_size'].'" data-ld="'.$instance['logo'].'" data-tlv="false" data-tshv="false" data-fsh="'.$instance['font_h_size'].'" data-fsd="'.$instance['font_d_size'].'" ></div>';
 
       echo $args['after_widget']; // Whatever you want to display after widget (</div>, etc)
     }
@@ -49,6 +49,8 @@
       $title_color = ! empty( $instance['title_color'] ) ? $instance['title_color'] : '#33337a';
       $logo = ! empty( $instance['logo'] ) ? $instance['logo'] : 'true';
       $logo_size = ! empty( $instance['logo_size'] ) ? $instance['logo_size'] : '15';
+      $font_h_size = ! empty( $instance['font_h_size'] ) ? $instance['font_h_size'] : '12';
+      $font_d_size = ! empty( $instance['font_d_size'] ) ? $instance['font_d_size'] : '14';
       $text_color = ! empty( $instance['text_color'] ) ? $instance['text_color'] : '#000000';
       $odd_color = ! empty( $instance['odd_color'] ) ? $instance['odd_color'] : '#ffffff';
       $even_color = ! empty( $instance['even_color'] ) ? $instance['even_color'] : '#eeeeee';
@@ -155,6 +157,34 @@
           value="<?php echo esc_attr( $logo_size ); ?>">
       </p>
 
+      <!-- FONT HEAD SIZE -->
+      <p>
+        <label for="<?php echo esc_attr( $this->get_field_id( 'font_h_size' ) ); ?>">
+          <?php esc_attr_e( 'Header Font Size:', 'ilt_domain' ); ?>
+        </label> 
+
+        <input 
+          class="widefat" 
+          id="<?php echo esc_attr( $this->get_field_id( 'font_h_size' ) ); ?>" 
+          name="<?php echo esc_attr( $this->get_field_name( 'font_h_size' ) ); ?>" 
+          type="number" 
+          value="<?php echo esc_attr( $font_h_size ); ?>">
+      </p>
+
+      <!-- FONT Body SIZE -->
+      <p>
+        <label for="<?php echo esc_attr( $this->get_field_id( 'font_d_size' ) ); ?>">
+          <?php esc_attr_e( 'Body Font Size:', 'ilt_domain' ); ?>
+        </label> 
+
+        <input 
+          class="widefat" 
+          id="<?php echo esc_attr( $this->get_field_id( 'font_d_size' ) ); ?>" 
+          name="<?php echo esc_attr( $this->get_field_name( 'font_d_size' ) ); ?>" 
+          type="number" 
+          value="<?php echo esc_attr( $font_d_size ); ?>">
+      </p>
+
       <!-- TEXT COLOR -->
       <p>
         <label for="<?php echo esc_attr( $this->get_field_id( 'text_color' ) ); ?>">
@@ -232,6 +262,8 @@
       $instance['title_color'] = ( ! empty( $new_instance['title_color'] ) ) ? strip_tags( $new_instance['title_color'] ) : '';
       $instance['logo'] = ( ! empty( $new_instance['logo'] ) ) ? strip_tags( $new_instance['logo'] ) : '';
       $instance['logo_size'] = ( ! empty( $new_instance['logo_size'] ) ) ? strip_tags( $new_instance['logo_size'] ) : '';
+      $instance['font_h_size'] = ( ! empty( $new_instance['font_h_size'] ) ) ? strip_tags( $new_instance['font_h_size'] ) : '';
+      $instance['font_d_size'] = ( ! empty( $new_instance['font_d_size'] ) ) ? strip_tags( $new_instance['font_d_size'] ) : '';
       $instance['text_color'] = ( ! empty( $new_instance['text_color'] ) ) ? strip_tags( $new_instance['text_color'] ) : '';
       $instance['odd_color'] = ( ! empty( $new_instance['odd_color'] ) ) ? strip_tags( $new_instance['odd_color'] ) : '';
       $instance['even_color'] = ( ! empty( $new_instance['even_color'] ) ) ? strip_tags( $new_instance['even_color'] ) : '';

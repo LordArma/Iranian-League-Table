@@ -12,6 +12,7 @@ var url,
     oddRowBgValue,
     evenRowBgValue,
     logoWidthValue,
+    fontSizeValue,
     logoDisplayValue,
     teamsLinkValue,
     tableTitleShowValue,
@@ -30,6 +31,8 @@ var url,
             (oddRowBgValue = document.querySelector(".vaz3-table").getAttribute("data-oddbgc")),
             (evenRowBgValue = document.querySelector(".vaz3-table").getAttribute("data-evbgc")),
             (logoWidthValue = document.querySelector(".vaz3-table").getAttribute("data-lw")),
+            (fontSizeHValue = document.querySelector(".vaz3-table").getAttribute("data-fsh")),
+            (fontSizeDValue = document.querySelector(".vaz3-table").getAttribute("data-fsd")),
             (logoDisplayValue = document.querySelector(".vaz3-table").getAttribute("data-ld")),
             (teamsLinkValue = document.querySelector(".vaz3-table").getAttribute("data-tlv")),
             (tableTitleShowValue = document.querySelector(".vaz3-table").getAttribute("data-tshv")),
@@ -41,7 +44,7 @@ var url,
             a = document.querySelector(".vaz3-table");
         "Football" == sportType &&
             (a.innerHTML =
-                ' <h3 style="margin:0 ; padding:5px 8px;" class="table-title"></h3><div class="vaz3-table-holder"><table style="width:100%; text-align:center; font-size: 12px;" class="vaz3-standing"><thead><tr><th scope="col" style="width: 15%;" >\u0631\u062a\u0628\u0647</th><th scope="col" style="width: 55%;">\u062a\u06cc\u0645</th><th scope="col" >\u0628\u0627\u0632\u06cc</th><th class="in-detailed" scope="col" >\u0628\u0631\u062f</th><th class="in-detailed" scope="col" >\u0645\u0633\u0627\u0648\u06cc</th><th class="in-detailed" scope="col" >\u0628\u0627\u062e\u062a</th><th class="in-detailed" scope="col" > \u06af\u0644 -/+</th><th class="in-detailed" scope="col" >\u062a\u0641\u0627\u0636\u0644 </th><th scope="col" >\u0627\u0645\u062a\u064a\u0627\u0632</th></tr></thead><tbody></tbody></table></div>'),
+                ' <h3 style="margin:0 ; padding:5px 8px;" class="table-title"></h3><div class="vaz3-table-holder"><table style="width:100%; text-align:center;" class="vaz3-standing"><thead><tr><th scope="col" style="width: 15%;" >\u0631\u062a\u0628\u0647</th><th scope="col" style="width: 55%;">\u062a\u06cc\u0645</th><th scope="col" >\u0628\u0627\u0632\u06cc</th><th class="in-detailed" scope="col" >\u0628\u0631\u062f</th><th class="in-detailed" scope="col" >\u0645\u0633\u0627\u0648\u06cc</th><th class="in-detailed" scope="col" >\u0628\u0627\u062e\u062a</th><th class="in-detailed" scope="col" > \u06af\u0644 -/+</th><th class="in-detailed" scope="col" >\u062a\u0641\u0627\u0636\u0644 </th><th scope="col" >\u0627\u0645\u062a\u064a\u0627\u0632</th></tr></thead><tbody></tbody></table></div>'),
             "Volleyball" == sportType &&
                 (a.innerHTML =
                     ' <h3 style="margin:0 ; padding:5px 10px;" class="table-title"></h3><div class="vaz3-table-holder"><table style="width:100%; text-align:center;" class="vaz3-standing"><thead><tr class="main-row"><th scope="col"></th><th scope="col"></th><th scope="col"></th><th class="has-border" scope="col" colspan="3">\u0645\u0633\u0627\u0628\u0642\u0627\u062a</th><th class="has-border" scope="col" colspan="6">\u062c\u0632\u0626\u06cc\u0627\u062a \u0646\u062a\u0627\u06cc\u062c</th><th class="has-border" scope="col" colspan="3">\u0633\u062a</th><th class="has-border" scope="col" colspan="3">\u067e\u0648\u0626\u0646</th></tr><tr class="secondary-row"><th>\u0631\u062a\u0628\u0647</th><th></th><th>\u0627\u0645\u062a\u06cc\u0627\u0632</th><th scope="col">\u0628\u0627\u0632\u06cc</th><th scope="col">\u0628\u0631\u062f</th><th scope="col">\u0628\u0627\u062e\u062a</th><th scope="col">3 - 0</th><th scope="col">3 - 1</th><th scope="col">3 - 2</th><th scope="col">0 - 3</th><th scope="col">1 - 3</th><th scope="col">2 - 3</th><th scope="col">\u0628\u0631\u062f\u0647</th><th scope="col">\u0628\u0627\u062e\u062a\u0647</th><th scope="col">\u0645\u0639\u062f\u0644</th><th scope="col">\u0628\u0631\u062f\u0647</th><th scope="col">\u0628\u0627\u062e\u062a\u0647</th><th scope="col">\u0645\u0639\u062f\u0644</th></tr</thead><tbody></tbody></table></div>');
@@ -151,6 +154,10 @@ var url,
         for (r = 0; r < u.length; r++) u[r].style.backgroundColor = evenRowBgValue;
         var h = document.querySelectorAll(".vaz3-standing td figure");
         for (r = 0; r < h.length; r++) h[r].style.width = logoWidthValue;
+        var f = document.querySelectorAll(".vaz3-standing th");
+        for (r = 0; r < f.length; r++) f[r].style.fontSize = fontSizeHValue + "px";
+        var z = document.querySelectorAll(".vaz3-standing td");
+        for (r = 0; r < z.length; r++) z[r].style.fontSize = fontSizeDValue + "px";
         var g = document.querySelectorAll(".vaz3-standing .in-detailed");
         for (r = 0; r < g.length; r++) g[r].style.display = "basic" == weightValue ? "none" : "table-cell";
         var b = document.querySelectorAll(".vaz3-standing td figure");
