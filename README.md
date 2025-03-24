@@ -4,3 +4,6 @@ A WordPress plugin that helps WordPress sites display the Iranian Premier League
 The tables are displayed in Farsi and can be customized in color and display type to match their display location.
 
 These tables are provided by the [Varzesh3](https://www.varzesh3.com/developer-tools) website.
+
+## Download
+You can download the last version from: [here](#).
