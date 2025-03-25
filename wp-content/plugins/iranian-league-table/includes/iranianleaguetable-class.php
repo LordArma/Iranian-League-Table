@@ -1,5 +1,7 @@
 <?php
 
+ require_once(plugin_dir_path(__FILE__).'/iranianleaguetable-parser.php');
+
  class Iranian_League_Widget extends WP_Widget {
   
     /**
@@ -7,7 +9,7 @@
      */
     function __construct() {
       parent::__construct(
-        'iranianleaguetable_widget', // Base ID
+        'iranianleaguetable_widget',
         esc_html__( 'Iranian League Table', 'ilt_domain' ), // Name
         array( 'description' => esc_html__( 'Widget to display Iranian leagues table', 'ilt_domain' ), ) // Args
       );
@@ -29,7 +31,20 @@
       }
 
       // Widget Content Output
-      echo '<div class="vaz3-table" data-sportype="Football" style="direction: rtl;" data-url="'.$instance['league'].'" data-lt="لیگ آزادگان" data-wv="'.$instance['table_type'].'" data-bw="0" data-bc="#eee" data-tc="#212121" data-tbgc="#eee" data-thc="#fff" data-thbgc="'.$instance['title_color'].'" data-tdc="'.$instance['text_color'].'" data-tdac="'.$instance['text_color'].'" data-oddbgc="'.$instance['odd_color'].'" data-evbgc="'.$instance['even_color'].'" data-lw="'.$instance['logo_size'].'" data-ld="'.$instance['logo'].'" data-tlv="false" data-tshv="false" data-fsh="'.$instance['font_h_size'].'" data-fsd="'.$instance['font_d_size'].'" ></div>';
+
+      echo '<div class="vaz3-table" style="direction: rtl;" >';
+      echo table($instance['league'],
+            $instance['table_type'],
+            $instance['title_color'],
+            $instance['title_text_color'],
+            $instance['text_color'],
+            $instance['odd_color'],
+            $instance['even_color'],
+            $instance['logo_size'],
+            $instance['logo'],
+            $instance['font_h_size'],
+            $instance['font_d_size']);
+      echo '</div>';
 
       echo $args['after_widget']; // Whatever you want to display after widget (</div>, etc)
     }
@@ -46,16 +61,16 @@
       $title = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Persian Gulf League', 'ilt_domain' );
       $league = ! empty( $instance['league'] ) ? $instance['league'] : 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing';
       $table_type = ! empty( $instance['table_type'] ) ? $instance['table_type'] : 'basic';
-      $title_color = ! empty( $instance['title_color'] ) ? $instance['title_color'] : '#33337a';
+      $title_color = ! empty( $instance['title_color'] ) ? $instance['title_color'] : '#212121';
+      $title_text_color = ! empty( $instance['title_text_color'] ) ? $instance['title_text_color'] : '#ffffff';
       $logo = ! empty( $instance['logo'] ) ? $instance['logo'] : 'true';
       $logo_size = ! empty( $instance['logo_size'] ) ? $instance['logo_size'] : '15';
-      $font_h_size = ! empty( $instance['font_h_size'] ) ? $instance['font_h_size'] : '12';
+      $font_h_size = ! empty( $instance['font_h_size'] ) ? $instance['font_h_size'] : '13';
       $font_d_size = ! empty( $instance['font_d_size'] ) ? $instance['font_d_size'] : '14';
       $text_color = ! empty( $instance['text_color'] ) ? $instance['text_color'] : '#000000';
       $odd_color = ! empty( $instance['odd_color'] ) ? $instance['odd_color'] : '#ffffff';
       $even_color = ! empty( $instance['even_color'] ) ? $instance['even_color'] : '#eeeeee';
-      $border_size = ! empty( $instance['border_size'] ) ? $instance['border_size'] : '0';
-  
+
       ?>
       
       <!-- TITLE -->
@@ -113,7 +128,7 @@
       <!-- TITLE COLOR -->
       <p>
         <label for="<?php echo esc_attr( $this->get_field_id( 'title_color' ) ); ?>">
-          <?php esc_attr_e( 'Title Color:', 'ilt_domain' ); ?>
+          <?php esc_attr_e( 'Title Background Color:', 'ilt_domain' ); ?>
         </label> 
 
         <input 
@@ -122,6 +137,20 @@
           name="<?php echo esc_attr( $this->get_field_name( 'title_color' ) ); ?>" 
           type="color" 
           value="<?php echo esc_attr( $title_color ); ?>">
+      </p>
+
+      <!-- TITLE TEXT COLOR -->
+      <p>
+        <label for="<?php echo esc_attr( $this->get_field_id( 'title_text_color' ) ); ?>">
+          <?php esc_attr_e( 'Title Text Color:', 'ilt_domain' ); ?>
+        </label> 
+
+        <input 
+          class="widefat" 
+          id="<?php echo esc_attr( $this->get_field_id( 'title_text_color' ) ); ?>" 
+          name="<?php echo esc_attr( $this->get_field_name( 'title_text_color' ) ); ?>" 
+          type="color" 
+          value="<?php echo esc_attr( $title_text_color ); ?>">
       </p>
 
       <!-- LOGO -->
@@ -227,19 +256,6 @@
           value="<?php echo esc_attr( $even_color ); ?>">
       </p>
 
-      <!-- BORDER SIZE -->
-      <p>
-        <label for="<?php echo esc_attr( $this->get_field_id( 'border_size' ) ); ?>">
-          <?php esc_attr_e( 'Border Size:', 'ilt_domain' ); ?>
-        </label> 
-
-        <input 
-          class="widefat" 
-          id="<?php echo esc_attr( $this->get_field_id( 'border_size' ) ); ?>" 
-          name="<?php echo esc_attr( $this->get_field_name( 'border_size' ) ); ?>" 
-          type="number" 
-          value="<?php echo esc_attr( $border_size ); ?>">
-      </p>
       <?php 
     }
   
@@ -260,6 +276,7 @@
       $instance['league'] = ( ! empty( $new_instance['league'] ) ) ? strip_tags( $new_instance['league'] ) : '';
       $instance['table_type'] = ( ! empty( $new_instance['table_type'] ) ) ? strip_tags( $new_instance['table_type'] ) : '';
       $instance['title_color'] = ( ! empty( $new_instance['title_color'] ) ) ? strip_tags( $new_instance['title_color'] ) : '';
+      $instance['title_text_color'] = ( ! empty( $new_instance['title_text_color'] ) ) ? strip_tags( $new_instance['title_text_color'] ) : '';
       $instance['logo'] = ( ! empty( $new_instance['logo'] ) ) ? strip_tags( $new_instance['logo'] ) : '';
       $instance['logo_size'] = ( ! empty( $new_instance['logo_size'] ) ) ? strip_tags( $new_instance['logo_size'] ) : '';
       $instance['font_h_size'] = ( ! empty( $new_instance['font_h_size'] ) ) ? strip_tags( $new_instance['font_h_size'] ) : '';
@@ -267,7 +284,6 @@
       $instance['text_color'] = ( ! empty( $new_instance['text_color'] ) ) ? strip_tags( $new_instance['text_color'] ) : '';
       $instance['odd_color'] = ( ! empty( $new_instance['odd_color'] ) ) ? strip_tags( $new_instance['odd_color'] ) : '';
       $instance['even_color'] = ( ! empty( $new_instance['even_color'] ) ) ? strip_tags( $new_instance['even_color'] ) : '';
-      $instance['border_size'] = ( ! empty( $new_instance['border_size'] ) ) ? strip_tags( $new_instance['border_size'] ) : '';
   
       return $instance;
     }
