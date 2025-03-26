@@ -25,10 +25,10 @@ function table($league, $table_type, $title_color, $title_text_color, $text_colo
     $advanced = '';
 
     if ($table_type != 'basic') {
-        $advanced = '<th class="in-detailed" scope="col" style="width: 15%; text-align: center;" >برد</th><th class="in-detailed" scope="col" style="width: 15%; text-align: center;" >مساوی</th><th class="in-detailed" scope="col" style="width: 15%; text-align: center;" >باخت</th><th class="in-detailed" scope="col" style="width: 20%; text-align: center;" >گل‌ها</th><th class="in-detailed" scope="col" style="width: 14%; text-align: center;" >تفاضل</th>';
+        $advanced = '<th class="in-detailed" scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >برد</th><th class="in-detailed" scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >مساوی</th><th class="in-detailed" scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >باخت</th><th class="in-detailed" scope="col" style="width: 20%; text-align: center; padding: 0 2px 0 2px;" >گل‌ها</th><th class="in-detailed" scope="col" style="width: 14%; text-align: center; padding: 0 2px 0 2px;" >تفاضل</th>';
     }
 
-    $input = '<div class="vaz3-table-holder" style="direction: rtl;" ><table style="text-align: center; white-space: nowrap;" class="vaz3-standing"><thead style="background-color: $title_color; font-size: $font_h_sizepx; color: $title_text_color;"><tr><th scope="col" style="width: 15%; text-align: center;" >رتبه</th><th scope="col" style="width: 55%;">تیم</th><th scope="col" style="width: 15%; text-align: center;" >بازی</th>' . $advanced . '<th scope="col" style="width: 15%; text-align: center;" >امتياز</th></tr></thead><tbody>';
+    $input = '<div class="vaz3-table-holder" style="direction: rtl;" ><table style="text-align: center; white-space: nowrap;" class="vaz3-standing"><thead style="background-color: $title_color; font-size: $font_h_sizepx; color: $title_text_color;"><tr><th scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >رتبه</th><th scope="col" style="width: 55%; padding: 0 2px 0 2px;">تیم</th><th scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >بازی</th>' . $advanced . '<th scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >امتياز</th></tr></thead><tbody>';
     $render = $render . replace_var($input, $title_color, $title_text_color, $text_color, $odd_color, $logo_size, $logo, $font_h_size, $font_d_size);
 
     $teams = $json->teams;
