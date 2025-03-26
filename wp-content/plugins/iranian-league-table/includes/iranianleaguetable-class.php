@@ -32,7 +32,7 @@
 
       // Widget Content Output
 
-      echo '<div class="vaz3-table" style="direction: rtl; overflow-x: auto;" >';
+      echo '<div class="vaz3-table" style="direction: rtl;" >';
       echo table($instance['league'],
             $instance['table_type'],
             $instance['title_color'],
