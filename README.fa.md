@@ -40,7 +40,7 @@
 
 نمایش مدل پایه جدول لیگ برتر ایران بدون لوگوی تیم‌ها با اعداد فارسی
 ```
-[iran_league league="persiangulf" mode="basic" logo="false"  farsi_numbers="true"]
+[iran_league league="persiangulf" mode="basic" logo="false" farsi_numbers="true"]
 ```
 
 نمایش جدول لیگ برتر ایران با رنگ و اندازه دلخواه

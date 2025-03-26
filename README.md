@@ -40,7 +40,7 @@ Advanced display of the Iranian League One (Azadegan) table
 
 ‌Basic display of the Iranian Premier League table without team logos and Farsi numbers
 ```
-[iran_league league="persiangulf" mode="basic" logo="false"  farsi_numbers="true"]
+[iran_league league="persiangulf" mode="basic" logo="false" farsi_numbers="true"]
 ```
 
 Display the Iranian Premier League table with the desired color and size
