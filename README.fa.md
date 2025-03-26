@@ -1,6 +1,7 @@
 # جدول لیگ ایران
 [![en](https://img.shields.io/badge/lang-en-red.svg)](https://github.com/LordArma/Iranian-League-Table)
 [![fa](https://img.shields.io/badge/lang-fa-yellow.svg)](https://github.com/LordArma/Iranian-League-Table/blob/master/README.fa.md)
+
 افزونه وردپرس که به سایت‌های وردپرسی کمک می‌کند جدول لیگ برتر ایران (لیگ خلیج فارس) یا لیگ یک ایران (لیگ آزادگان) را به صورت ویجت یا شورتکد به فارسی نمایش دهند.
 
 جدول‌ها به زبان فارسی نمایش داده می‌شوند و می‌توان آنها را در رنگ، نوع و اندازه‌های گوناگون سفارشی کرد تا با محل نمایش آنها مطابقت داشته باشد.
