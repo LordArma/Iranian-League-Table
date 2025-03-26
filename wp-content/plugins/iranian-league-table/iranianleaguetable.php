@@ -3,7 +3,7 @@
 Plugin Name: Iranian League Table
 Plugin URI: https://github.com/LordArma/Iranian-League-Table
 Description: Display the Iranian Premier League (Persian Gulf League) or the Iranian League One (Azadegan League) table in Farsi as a widget.
-Version: 2.2.1
+Version: 2.2.2
 Author: Arma
 Author URI: https://LordArma.com
 Text Domain: ilt_domain
@@ -30,8 +30,8 @@ function ir_table($atts = [], $content = null, $tag = ''){
 			'league' => 'bartar',
       'mode' => 'basic',
       'title_backcolor' => '#212121',
-      'title_color' => '#ffffff',
-      'text_color' => '#000000',
+      'title_color' => '#eeeeee',
+      'text_color' => '#212121',
       'odd_color' => '#ffffff',
       'even_color' => '#eeeeee',
       'logo_size' => '15',
@@ -43,14 +43,7 @@ function ir_table($atts = [], $content = null, $tag = ''){
 
   $render = '<div class="vaz3-table" style="direction: rtl; overflow-x: auto;" >';
 
-  $league_url = 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing';
-  $league_name = $irt_atts['league'];
-
-  if ($league_name == 'one' || $league_name == '1' || $league_name == 'yek' || $league_name == 'lige1' || $league_name == 'leagueone' || $league_name == 'azadegan' || $league_name == 'ligeyek' || $league_name == 'لیگ۱'  || $league_name == 'آزادگان'){
-    $league_url = 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing';
-  }
-
-  $render = $render . table($league_url,
+  $render = $render . table($irt_atts['league'],
                             $irt_atts['mode'],
                             $irt_atts['title_backcolor'],
                             $irt_atts['title_color'],

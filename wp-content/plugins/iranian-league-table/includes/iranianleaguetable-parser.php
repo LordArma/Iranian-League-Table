@@ -18,12 +18,18 @@ function replace_var($input, $title_color, $title_text_color, $text_color, $b_co
     return $output;
 }
 
-function table($league, $table_type, $title_color, $title_text_color, $text_color, $odd_color, $even_color, $logo_size, $logo, $font_h_size, $font_d_size){
+function table($league = "persiangulf", $table_type = "basic", $title_color = "#212121", $title_text_color = "#eeeeee", $text_color = "#212121", $odd_color = "#ffffff", $even_color = "#eeeeee", $logo_size = "15", $logo = "true", $font_h_size = "12", $font_d_size = "13"){
     $render = "";
+    $league_url = 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing';
+    $league_name = $league;
 
-    $json = json_decode(get_data($league), false);
+    if ($league_name == 'one' || $league_name == '1' || $league_name == 'yek' || $league_name == 'lige1' || $league_name == 'leagueone' || $league_name == 'azadegan' || $league_name == 'ligeyek' || $league_name == 'لیگ۱'  || $league_name == 'آزادگان'){
+        $league_url = 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing';
+    }
+
+    $json = json_decode(get_data($league_url), false);
+    
     $advanced = '';
-
     if ($table_type != 'basic') {
         $advanced = '<th class="in-detailed" scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >برد</th><th class="in-detailed" scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >مساوی</th><th class="in-detailed" scope="col" style="width: 15%; text-align: center; padding: 0 2px 0 2px;" >باخت</th><th class="in-detailed" scope="col" style="width: 20%; text-align: center; padding: 0 2px 0 2px;" >گل‌ها</th><th class="in-detailed" scope="col" style="width: 14%; text-align: center; padding: 0 2px 0 2px;" >تفاضل</th>';
     }
