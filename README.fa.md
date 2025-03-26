@@ -47,3 +47,6 @@
 ```
 [iran_league league="bartar" mode="advanced" title_backcolor="#212121" title_color="#ffffff" text_color="#212121" odd_color="#ffffff" even_color="#eeeeee" logo_size="15" logo="true" title_font="12" text_font="13" farsi_numbers="false"]
 ```
+
+## توضیحات بیشتر به زبان فارسی
+در وبلاگم مطلبی با عنوان [پلاگین وردپرس جدول لیگ برتر و لیگ یک فوتبال ایران](https://lordarma.com/iranian-league-table/) منتشر کردم. در صورت تمایل می‌توانید [این مطلب](https://lordarma.com/iranian-league-table/) را هم برای آشنایی بیشتر با این افزونه مطالعه کنید.
