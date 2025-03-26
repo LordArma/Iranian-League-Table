@@ -16,10 +16,10 @@ You can use this plugin in two ways:
 - As a Widget
 - As a Shortcode
 
-### Use Iranian League Table As A Widget
+### Use Iranian League Table as a Widget
 If your WordPress theme supports legacy widgets, you can easily place your desired table in the appropriate place from the WordPress widgets section and then set its options.
 
-### Use Iranian League Table As A Shortcode
+### Use Iranian League Table as a Shortcode
 This method works correctly in all versions of WordPress. All you need to do is place the shortcode of this plugin along with your desired parameters in the shortcode placement area, such as WordPress blocks, on your WordPress site pages and posts.
 
 ### Example of Using Shortcode
