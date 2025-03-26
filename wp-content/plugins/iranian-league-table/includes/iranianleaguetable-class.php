@@ -43,7 +43,8 @@
             $instance['logo_size'],
             $instance['logo'],
             $instance['font_h_size'],
-            $instance['font_d_size']);
+            $instance['font_d_size'],
+            $instance['farsi_numbers']);
       echo '</div>';
 
       echo $args['after_widget']; // Whatever you want to display after widget (</div>, etc)
@@ -70,6 +71,7 @@
       $text_color = ! empty( $instance['text_color'] ) ? $instance['text_color'] : '#000000';
       $odd_color = ! empty( $instance['odd_color'] ) ? $instance['odd_color'] : '#ffffff';
       $even_color = ! empty( $instance['even_color'] ) ? $instance['even_color'] : '#eeeeee';
+      $farsi_numbers = ! empty( $instance['farsi_numbers'] ) ? $instance['farsi_numbers'] : 'true';
 
       ?>
       
@@ -256,6 +258,25 @@
           value="<?php echo esc_attr( $even_color ); ?>">
       </p>
 
+      <!-- FARSI NUMBERS -->
+      <p>
+        <label for="<?php echo esc_attr( $this->get_field_id( 'logo' ) ); ?>">
+          <?php esc_attr_e( 'Farsi Numbers:', 'ilt_domain' ); ?>
+        </label> 
+
+        <select 
+          class="widefat" 
+          id="<?php echo esc_attr( $this->get_field_id( 'farsi_numbers' ) ); ?>" 
+          name="<?php echo esc_attr( $this->get_field_name( 'farsi_numbers' ) ); ?>">
+          <option value="true" <?php echo ($farsi_numbers == 'true') ? 'selected' : ''; ?>>
+            <?php esc_attr_e( 'Yes', 'ilt_domain' ) ?>
+          </option>
+          <option value="false" <?php echo ($farsi_numbers == 'false') ? 'selected' : ''; ?>>
+            <?php esc_attr_e( 'No', 'ilt_domain' ) ?>
+          </option>
+        </select>
+      </p>
+
       <?php 
     }
   
@@ -284,6 +305,7 @@
       $instance['text_color'] = ( ! empty( $new_instance['text_color'] ) ) ? strip_tags( $new_instance['text_color'] ) : '';
       $instance['odd_color'] = ( ! empty( $new_instance['odd_color'] ) ) ? strip_tags( $new_instance['odd_color'] ) : '';
       $instance['even_color'] = ( ! empty( $new_instance['even_color'] ) ) ? strip_tags( $new_instance['even_color'] ) : '';
+      $instance['farsi_numbers'] = ( ! empty( $new_instance['farsi_numbers'] ) ) ? strip_tags( $new_instance['farsi_numbers'] ) : '';
   
       return $instance;
     }

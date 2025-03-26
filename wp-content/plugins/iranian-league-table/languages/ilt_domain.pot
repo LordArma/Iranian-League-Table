@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Iranian League Table\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-03-26 11:01+0000\n"
+"POT-Creation-Date: 2025-03-26 20:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Loco-Version: 2.7.1; wp-6.7.2\n"
 "X-Domain: ilt_domain"
 
-#: includes/iranianleaguetable-class.php:123
+#: includes/iranianleaguetable-class.php:125
 msgid "Advanced"
 msgstr ""
 
@@ -24,11 +24,11 @@ msgstr ""
 msgid "Arma"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:120
+#: includes/iranianleaguetable-class.php:122
 msgid "Basic"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:206
+#: includes/iranianleaguetable-class.php:208
 msgid "Body Font Size:"
 msgstr ""
 
@@ -38,11 +38,15 @@ msgid ""
 "League One (Azadegan League) table in Farsi as a widget."
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:248
+#: includes/iranianleaguetable-class.php:250
 msgid "Even Rows Color:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:192
+#: includes/iranianleaguetable-class.php:264
+msgid "Farsi Numbers:"
+msgstr ""
+
+#: includes/iranianleaguetable-class.php:194
 msgid "Header Font Size:"
 msgstr ""
 
@@ -59,55 +63,56 @@ msgstr ""
 msgid "Iranian League Table"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:93
+#: includes/iranianleaguetable-class.php:95
 msgid "LEAGUE NAME:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:104
+#: includes/iranianleaguetable-class.php:106
 msgid "League One"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:178
+#: includes/iranianleaguetable-class.php:180
 msgid "Logo Size:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:170
+#: includes/iranianleaguetable-class.php:172
+#: includes/iranianleaguetable-class.php:275
 msgid "No"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:234
+#: includes/iranianleaguetable-class.php:236
 msgid "Odd Rows Color:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:101
+#: includes/iranianleaguetable-class.php:103
 msgid "Persian Gulf"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:61
+#: includes/iranianleaguetable-class.php:62
 msgid "Persian Gulf League"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:159
+#: includes/iranianleaguetable-class.php:161
 msgid "Show Logo:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:112
+#: includes/iranianleaguetable-class.php:114
 msgid "Table Type:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:220
+#: includes/iranianleaguetable-class.php:222
 msgid "Text Color:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:131
+#: includes/iranianleaguetable-class.php:133
 msgid "Title Background Color:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:145
+#: includes/iranianleaguetable-class.php:147
 msgid "Title Text Color:"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:79
+#: includes/iranianleaguetable-class.php:81
 msgid "Title:"
 msgstr ""
 
@@ -115,6 +120,7 @@ msgstr ""
 msgid "Widget to display Iranian leagues table"
 msgstr ""
 
-#: includes/iranianleaguetable-class.php:167
+#: includes/iranianleaguetable-class.php:169
+#: includes/iranianleaguetable-class.php:272
 msgid "Yes"
 msgstr ""

@@ -38,7 +38,14 @@ Advanced display of the Iranian League One (Azadegan) table
 [iran_league league="persiangulf" mode="basic" logo="false"]
 ```
 
+‌Basic display of the Iranian Premier League table without team logos and Farsi numbers
+```
+[iran_league league="persiangulf" mode="basic" logo="false"  farsi_numbers="true"]
+```
+
 Display the Iranian Premier League table with the desired color and size
 ```
-[iran_league league="bartar" mode="advanced" title_backcolor="#212121" title_color="#ffffff" text_color="#212121" odd_color="#ffffff" even_color="#eeeeee" logo_size="15" logo="true" title_font="12" text_font="13"]
+[iran_league league="bartar" mode="advanced" title_backcolor="#212121" title_color="#ffffff" text_color="#212121" odd_color="#ffffff" even_color="#eeeeee" logo_size="15" logo="true" title_font="12" text_font="13" farsi_numbers="false"]
 ```
+
+
