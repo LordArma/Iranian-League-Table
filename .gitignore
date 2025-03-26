@@ -26,6 +26,9 @@ wp-config.php
 # Example plugin
 /wp-content/plugins/hello.php
 
+# Loco Translate plugin
+/wp-content/plugins/loco*/
+
 # Uploads
 /wp-content/uploads/
 
