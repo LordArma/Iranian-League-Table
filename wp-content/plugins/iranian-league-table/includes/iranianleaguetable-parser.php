@@ -25,10 +25,10 @@ function table($league, $table_type, $title_color, $title_text_color, $text_colo
     $advanced = '';
 
     if ($table_type != 'basic') {
-        $advanced = '<th class="in-detailed" scope="col" style="width: 15%;" >برد</th><th class="in-detailed" scope="col" style="width: 15%;" >مساوی</th><th class="in-detailed" scope="col" style="width: 15%;" >باخت</th><th class="in-detailed" scope="col" style="width: 17%;" >گل‌ها</th><th class="in-detailed" scope="col" style="width: 15%;" >تفاضل</th>';
+        $advanced = '<th class="in-detailed" scope="col" style="width: 15%; text-align: center;" >برد</th><th class="in-detailed" scope="col" style="width: 15%; text-align: center;" >مساوی</th><th class="in-detailed" scope="col" style="width: 15%; text-align: center;" >باخت</th><th class="in-detailed" scope="col" style="width: 20%; text-align: center;" >گل‌ها</th><th class="in-detailed" scope="col" style="width: 14%; text-align: center;" >تفاضل</th>';
     }
 
-    $input = '<div class="vaz3-table-holder"><table style="width:100%; text-align:center;" class="vaz3-standing"><thead style="background-color: $title_color; font-size: $font_h_sizepx; color: $title_text_color;"><tr><th scope="col" style="width: 15%;" >رتبه</th><th scope="col" style="width: 55%;">تیم</th><th scope="col" style="width: 15%;" >بازی</th>' . $advanced . '<th scope="col" style="width: 15%;" >امتياز</th></tr></thead><tbody>';
+    $input = '<div class="vaz3-table-holder" style="direction: rtl;" ><table style="text-align: center; white-space: nowrap;" class="vaz3-standing"><thead style="background-color: $title_color; font-size: $font_h_sizepx; color: $title_text_color;"><tr><th scope="col" style="width: 15%; text-align: center;" >رتبه</th><th scope="col" style="width: 55%;">تیم</th><th scope="col" style="width: 15%; text-align: center;" >بازی</th>' . $advanced . '<th scope="col" style="width: 15%; text-align: center;" >امتياز</th></tr></thead><tbody>';
     $render = $render . replace_var($input, $title_color, $title_text_color, $text_color, $odd_color, $logo_size, $logo, $font_h_size, $font_d_size);
 
     $teams = $json->teams;
@@ -40,7 +40,7 @@ function table($league, $table_type, $title_color, $title_text_color, $text_colo
         $logo_type = 'inline-block';
         if ($logo == 'false') $logo_type = 'none';
 
-        $i = '<tr style="color: $text_color; background-color: $b_color; font-size: $font_d_sizepx;"><td>';
+        $i = '<tr style="color: $text_color; background-color: $b_color; font-size: $font_d_sizepx;"><td style="text-align: center;" >';
         $render = $render . replace_var($i, $title_color, $title_text_color, $text_color, $b_color, $logo_size, $logo_type, $font_h_size, $font_d_size);
         $render = $render . $counter;
         $counter = $counter + 1;
@@ -49,25 +49,25 @@ function table($league, $table_type, $title_color, $title_text_color, $text_colo
         $render = $render . $team->logo;
         $render = $render . '"></figure><span style="margin-right: 3px;">';
         $render = $render . $team->name;
-        $render = $render . '</span></td><td>';
+        $render = $render . '</span></td><td style="text-align: center;" >';
         $render = $render . $team->played;
         $render = $render . '</td>';
 
         if ($table_type != 'basic'){
-            $render = $render . '<td class="in-detailed" >';
+            $render = $render . '<td class="in-detailed" style="text-align: center;" >';
             $render = $render . $team->wins;
-            $render = $render . '</td><td class="in-detailed" >';
+            $render = $render . '</td><td class="in-detailed" style="text-align: center;" >';
             $render = $render . $team->draws;
-            $render = $render . '</td><td class="in-detailed" >';
+            $render = $render . '</td><td class="in-detailed" style="text-align: center;" >';
             $render = $render . $team->losses;
-            $render = $render . '</td><td class="in-detailed" >';
+            $render = $render . '</td><td class="in-detailed" style="text-align: center;" >';
             $render = $render . $team->goalFor . '-' . $team->goalAgainst;
-            $render = $render . '</td><td class="in-detailed" >';
+            $render = $render . '</td><td class="in-detailed" style="text-align: center;" >';
             $render = $render . $team->goalDifference;
             $render = $render . '</td>';
         }
 
-        $render = $render . '<td>';
+        $render = $render . '<td style="text-align: center;" >';
         $render = $render . $team->points;
         $render = $render . '</td></tr>';
 

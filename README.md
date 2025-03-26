@@ -40,5 +40,5 @@ Advanced display of the Iranian League One (Azadegan) table
 
 Display the Iranian Premier League table with the desired color and size
 ```
-[iran_league league="bartar" mode="advanced" title_backcolor="#212121" title_color="#ffffff" text_color="#212121" odd_color="#ffffff" even_color="#eeeeee" logo_size="15" logo="true" title_font="13" text_font="14"]
+[iran_league league="bartar" mode="advanced" title_backcolor="#212121" title_color="#ffffff" text_color="#212121" odd_color="#ffffff" even_color="#eeeeee" logo_size="15" logo="true" title_font="12" text_font="13"]
 ```
