@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: Iranian League Table\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-03-26 20:15+0000\n"
-"PO-Revision-Date: 2025-03-26 20:18+0000\n"
+"PO-Revision-Date: 2025-03-27 14:14+0000\n"
 "Last-Translator: \n"
 "Language-Team: فارسی\n"
 "Language: fa_IR\n"
@@ -19,6 +19,10 @@ msgstr ""
 msgid "Advanced"
 msgstr "پیشرفته"
 
+#: includes/iranianleaguetable-settings.php:18
+msgid "Advanced display of the Iranian League One (Azadegan) table"
+msgstr "نمایش پیشرفته جدول لیگ یک ایران (آزادگان)."
+
 #. Author of the plugin
 msgid "Arma"
 msgstr "آرما"
@@ -26,6 +30,20 @@ msgstr "آرما"
 #: includes/iranianleaguetable-class.php:122
 msgid "Basic"
 msgstr "پایه"
+
+#: includes/iranianleaguetable-settings.php:11
+msgid "Basic display of the Iranian Premier League (Persian Gulf) table"
+msgstr "‌نمایش مدل پایه جدول لیگ برتر ایران (خلیج فارس)"
+
+#: includes/iranianleaguetable-settings.php:25
+msgid "Basic display of the Iranian Premier League table without team logos"
+msgstr "‌نمایش مدل پایه جدول لیگ برتر ایران بدون لوگوی تیم‌ها"
+
+#: includes/iranianleaguetable-settings.php:32
+msgid ""
+"Basic display of the Iranian Premier League table without team logos and "
+"Farsi numbers"
+msgstr "نمایش مدل پایه جدول لیگ برتر ایران بدون لوگوی تیم‌ها با اعداد فارسی"
 
 #: includes/iranianleaguetable-class.php:208
 msgid "Body Font Size:"
@@ -39,9 +57,18 @@ msgstr ""
 "جدول لیگ برتر ایران (لیگ خلیج فارس) یا لیگ یک ایران (لیگ آزادگان) را به صورت "
 "ویجت به فارسی نمایش دهید."
 
+#: includes/iranianleaguetable-settings.php:39
+msgid ""
+"Display the Iranian Premier League table with the desired color and size"
+msgstr "نمایش جدول لیگ برتر ایران با رنگ و اندازه دلخواه"
+
 #: includes/iranianleaguetable-class.php:250
 msgid "Even Rows Color:"
 msgstr "رنگ سطرهای زوج:"
+
+#: includes/iranianleaguetable-settings.php:7
+msgid "Example of Using Shortcode"
+msgstr "چند مثال از شیوه استفاده"
 
 #: includes/iranianleaguetable-class.php:264
 msgid "Farsi Numbers:"
@@ -71,6 +98,10 @@ msgstr "نام لیگ:"
 #: includes/iranianleaguetable-class.php:106
 msgid "League One"
 msgstr "لیگ یک"
+
+#: iranianleaguetable.php:74 iranianleaguetable.php:75
+msgid "League Table"
+msgstr "جدول لیگ"
 
 #: includes/iranianleaguetable-class.php:180
 msgid "Logo Size:"
