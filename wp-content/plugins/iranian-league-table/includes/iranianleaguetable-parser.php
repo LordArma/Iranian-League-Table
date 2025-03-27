@@ -1,7 +1,7 @@
 <?php
 
-function get_data($league){
-    $response = file_get_contents($league);
+function get_data($league_url){
+    $response = file_get_contents($league_url);
     return $response;
 }
 
@@ -44,7 +44,23 @@ function table($league = "persiangulf", $table_type = "basic", $title_color = "#
         $league_url = 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing';
     }
 
-    $json = json_decode(get_data($league_url), false);
+    $data = NULL;
+    $json = NULL;
+    $path = WP_PLUGIN_DIR . "/iranian-league-table/data/";
+    $file = $path . $league_name;
+    $last_update = get_option( "ilt_last_update");
+
+    // Update table after 120 seconds
+    if ($last_update + 120 < time() || !file_exists($file)){
+        $data = get_data($league_url);
+        $json = json_decode($data, false);
+        file_put_contents($file, $data);
+        update_option( "ilt_last_update", time() );
+    }
+    else {
+        $data = file_get_contents($file);
+        $json = json_decode($data, false);
+    }
     
     $min_width = "100px";
 
@@ -75,7 +91,25 @@ function table($league = "persiangulf", $table_type = "basic", $title_color = "#
         $counter = $counter + 1;
         $i = '</td><td style="text-align: right;"><figure style="margin-right: 2px; display: $logo_type; width: $logo_sizepx; height: $logo_sizepx;"><img style="max-width: 100%;" src="';
         $render = $render . replace_var($i, $title_color, $title_text_color, $text_color, $b_color, $logo_size, $logo_type, $font_h_size, $font_d_size);
-        $render = $render . $team->logo;
+        
+        // Update logos after 12 hours
+        if ($last_update + 43200 < time() || !file_exists($path . $team->name . '.png')){
+            $ch = curl_init($team->logo);
+            $fp = fopen($path . $team->name . '.png' , 'wb');
+            curl_setopt($ch, CURLOPT_FILE, $fp);
+            curl_setopt($ch, CURLOPT_HEADER, 0);
+            curl_exec($ch);
+            curl_close($ch);
+            fclose($fp);
+        }
+
+        if (file_exists($path . $team->name . '.png')){
+            $render = $render . plugins_url(). '/iranian-league-table/data/' . $team->name . '.png';
+        }
+        else{
+            $render = $render . $team->logo;
+        }
+        
         $render = $render . '"></figure><span style="margin-right: 3px;">';
         $render = $render . $team->name;
         $render = $render . '</span></td><td style="text-align: center;" >';

@@ -99,10 +99,10 @@
           class="widefat" 
           id="<?php echo esc_attr( $this->get_field_id( 'league' ) ); ?>" 
           name="<?php echo esc_attr( $this->get_field_name( 'league' ) ); ?>">
-          <option value="https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing" <?php echo ($league == 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/6/standing') ? 'selected' : ''; ?>>
+          <option value="persiangulf" <?php echo ($league == 'persiangulf') ? 'selected' : ''; ?>>
             <?php esc_attr_e( 'Persian Gulf', 'ilt_domain' ) ?>
           </option>
-          <option value="https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing" <?php echo ($league == 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing') ? 'selected' : ''; ?>>
+          <option value="azadegan" <?php echo ($league == 'azadegan') ? 'selected' : ''; ?>>
             <?php esc_attr_e( 'League One', 'ilt_domain' ) ?>
           </option>
         </select>

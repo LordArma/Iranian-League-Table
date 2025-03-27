@@ -52,3 +52,7 @@ wp-config.php
 
 # Local program files
 /local-xdebuginfo.php
+
+# Table data
+/wp-content/plugins/iranian-league-table/data/*
+!/wp-content/plugins/iranian-league-table/data/index.php
