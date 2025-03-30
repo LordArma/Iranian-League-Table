@@ -56,3 +56,6 @@ wp-config.php
 # Table data
 /wp-content/plugins/iranian-league-table/data/*
 !/wp-content/plugins/iranian-league-table/data/index.php
+
+#macOS files
+.DS_Store
