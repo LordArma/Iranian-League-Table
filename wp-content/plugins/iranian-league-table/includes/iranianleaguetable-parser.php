@@ -49,6 +49,7 @@ function table($league = "persiangulf", $table_type = "basic", $title_color = "#
     $path = WP_PLUGIN_DIR . "/iranian-league-table/data/";
     $file = $path . $league_name;
     $last_update = get_option( "ilt_last_update");
+    $last_logo = get_option( "ilt_last_logo");
 
     // Update table after 120 seconds
     if ($last_update + 120 < time() || !file_exists($file)){
@@ -93,7 +94,7 @@ function table($league = "persiangulf", $table_type = "basic", $title_color = "#
         $render = $render . replace_var($i, $title_color, $title_text_color, $text_color, $b_color, $logo_size, $logo_type, $font_h_size, $font_d_size);
         
         // Update logos after 12 hours
-        if ($last_update + 43200 < time() || !file_exists($path . $team->name . '.png')){
+        if ($last_logo + 43200 < time() || !file_exists($path . $team->name . '.png')){
             $ch = curl_init($team->logo);
             $fp = fopen($path . $team->name . '.png' , 'wb');
             curl_setopt($ch, CURLOPT_FILE, $fp);
@@ -101,6 +102,7 @@ function table($league = "persiangulf", $table_type = "basic", $title_color = "#
             curl_exec($ch);
             curl_close($ch);
             fclose($fp);
+            update_option( "ilt_last_logo", time() );
         }
 
         if (file_exists($path . $team->name . '.png')){

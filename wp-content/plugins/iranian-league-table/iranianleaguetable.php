@@ -3,7 +3,7 @@
 Plugin Name: Iranian League Table
 Plugin URI: https://github.com/LordArma/Iranian-League-Table
 Description: Display the Iranian Premier League (Persian Gulf League) or the Iranian League One (Azadegan League) table in Farsi as a widget.
-Version: 3.0.0
+Version: 3.1.0
 Author: Arma
 Author URI: https://LordArma.com
 Text Domain: ilt_domain
@@ -83,5 +83,11 @@ add_action('admin_menu', 'register_submenu');
 $existing = get_option( "ilt_last_update" );
 
 if ( empty($existing) ){
-    add_option( "ilt_last_update", time() );
+    add_option( "ilt_last_update", time() - 120 );
+}
+
+$existing = get_option( "ilt_last_logo" );
+
+if ( empty($existing) ){
+    add_option( "ilt_last_logo", time() - 43200 );
 }
