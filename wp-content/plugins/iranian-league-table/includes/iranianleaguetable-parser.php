@@ -43,6 +43,9 @@ function table($league = "persiangulf", $table_type = "basic", $title_color = "#
     if ($league_name == 'one' || $league_name == '1' || $league_name == 'yek' || $league_name == 'lige1' || $league_name == 'leagueone' || $league_name == 'azadegan' || $league_name == 'ligeyek' || $league_name == 'لیگ۱'  || $league_name == 'آزادگان'){
         $league_url = 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/24/standing';
     }
+    else if ($league_name == 'kowsar' || $league_name == 'kosar' || $league_name == 'women' || $league_name == 'woman' || $league_name == 'zanan' || $league_name == 'banovan' || $league_name == 'leaguekosar' || $league_name == 'زنان' || $league_name == 'بانو'  || $league_name == 'بانوان'){
+        $league_url = 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/54/standing';
+    }
 
     $data = NULL;
     $json = NULL;

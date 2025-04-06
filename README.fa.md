@@ -43,6 +43,11 @@
 [iran_league league="persiangulf" mode="basic" logo="false" farsi_numbers="true"]
 ```
 
+نمایش مدل پایه لیگ زنان ایران (کوثر) بدون لوگو
+```
+[iran_league league="kowsar" mode="basic" logo="false"]
+```
+
 نمایش جدول لیگ برتر ایران با رنگ و اندازه دلخواه
 ```
 [iran_league league="bartar" mode="advanced" title_backcolor="#212121" title_color="#ffffff" text_color="#212121" odd_color="#ffffff" even_color="#eeeeee" logo_size="15" logo="true" title_font="12" text_font="13" farsi_numbers="false"]

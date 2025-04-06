@@ -105,6 +105,9 @@
           <option value="azadegan" <?php echo ($league == 'azadegan') ? 'selected' : ''; ?>>
             <?php esc_attr_e( 'League One', 'ilt_domain' ) ?>
           </option>
+          <option value="kowsar" <?php echo ($league == 'kowsar') ? 'selected' : ''; ?>>
+            <?php esc_attr_e( 'League Kowsar', 'ilt_domain' ) ?>
+          </option>
         </select>
       </p>
 
