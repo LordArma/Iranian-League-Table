@@ -240,7 +240,7 @@ final class ILT_Renderer {
 	}
 
 	/**
-	 * schema.org JSON-LD (on by default; Settings → "Structured data").
+	 * Schema.org JSON-LD (on by default; Settings → "Structured data").
 	 *
 	 * @param object $data Decoded standings.
 	 * @return string
