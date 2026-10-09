@@ -1,0 +1,8 @@
+{
+  "name": "js-yaml",
+  "version": "4.3.2-compat",
+  "private": true,
+  "description": "Dev-only shim: js-yaml 4 with the v3 safeLoad/safeDump names that @wordpress/env still uses. Drops js-yaml 3 -> argparse 1 -> sprintf-js (GHSA-hp3w-g68c-fv3c, no patched release). Its js-yaml 4 copy is the root devDependency js-yaml-v4.",
+  "main": "index.js",
+  "license": "MIT"
+}
