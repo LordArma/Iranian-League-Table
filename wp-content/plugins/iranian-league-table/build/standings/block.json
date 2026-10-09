@@ -1,0 +1,45 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "iranian-league-table/standings",
+  "version": "4.4.1",
+  "title": "League Table",
+  "category": "widgets",
+  "icon": "editor-table",
+  "description": "Iranian football league standings in Persian (Persian Gulf, Azadegan or Kowsar).",
+  "keywords": [
+    "football",
+    "league",
+    "standings",
+    "جدول",
+    "لیگ",
+    "فوتبال"
+  ],
+  "textdomain": "iranian-league-table",
+  "attributes": {
+    "tableId": {
+      "type": "integer",
+      "default": 0
+    },
+    "options": {
+      "type": "object",
+      "default": {}
+    }
+  },
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "example": {
+    "attributes": {
+      "options": {
+        "mode": "advanced"
+      }
+    }
+  },
+  "editorScript": "file:./index.js",
+  "style": "ilt-style"
+}

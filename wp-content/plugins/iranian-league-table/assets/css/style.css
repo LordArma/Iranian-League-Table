@@ -1,0 +1,239 @@
+/* Iranian League Table. Colors and sizes come from CSS custom properties set on the wrapper,
+   so themes can override them, e.g. .ilt { --ilt-head-bg: #003366; } */
+
+.ilt {
+	container-type: inline-size;
+	container-name: ilt;
+	--ilt-head-bg: #212121;
+	--ilt-head-fg: #eeeeee;
+	--ilt-text: #212121;
+	--ilt-odd: #ffffff;
+	--ilt-even: #eeeeee;
+	--ilt-logo-size: 15px;
+	--ilt-head-font: 13px;
+	--ilt-body-font: 14px;
+	direction: rtl;
+	max-width: 100%;
+}
+
+.ilt .il-table-holder {
+	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
+}
+
+.ilt table.ilt-standing {
+	width: 100%;
+	min-width: 100px;
+	margin: 0;
+	text-align: center;
+	white-space: nowrap;
+}
+
+.ilt.ilt--advanced table.ilt-standing {
+	min-width: 400px;
+}
+
+.ilt table.ilt-standing .ilt-caption {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	white-space: nowrap;
+}
+
+.ilt table.ilt-standing thead {
+	background-color: var(--ilt-head-bg);
+	color: var(--ilt-head-fg);
+	font-size: var(--ilt-head-font);
+}
+
+.ilt table.ilt-standing thead th {
+	width: 15%;
+	padding: 0 2px;
+	background: transparent;
+	color: inherit;
+	font-size: inherit;
+	text-align: center;
+}
+
+.ilt table.ilt-standing thead th.ilt-col-team {
+	width: 60%;
+}
+
+.ilt table.ilt-standing thead th.ilt-col-goals {
+	width: 18%;
+}
+
+.ilt table.ilt-standing thead th.ilt-col-diff {
+	width: 14%;
+}
+
+.ilt table.ilt-standing tbody tr {
+	background-color: var(--ilt-odd);
+	color: var(--ilt-text);
+	font-size: var(--ilt-body-font);
+}
+
+.ilt table.ilt-standing tbody tr:nth-child(even) {
+	background-color: var(--ilt-even);
+}
+
+.ilt table.ilt-standing tbody td,
+.ilt table.ilt-standing tbody th {
+	background: transparent;
+	color: inherit;
+	font-size: inherit;
+	text-align: center;
+}
+
+.ilt table.ilt-standing tbody th.ilt-team {
+	font-weight: inherit;
+	text-align: right;
+}
+
+.ilt .ilt-logo {
+	display: inline-block;
+	width: var(--ilt-logo-size);
+	height: var(--ilt-logo-size);
+	max-width: none;
+	margin: 0 2px 0 0;
+	object-fit: contain;
+	vertical-align: middle;
+}
+
+.ilt .ilt-team-name {
+	margin-right: 3px;
+}
+
+.ilt .ilt-unavailable {
+	margin: 0;
+	padding: 0.5em;
+	text-align: center;
+}
+
+/* ---- Zones, highlighted team, legend, footer ---- */
+.ilt table.ilt-standing tbody tr.ilt-row--top {
+	background-color: var(--ilt-top, #dff3e4);
+}
+
+.ilt table.ilt-standing tbody tr.ilt-row--bottom {
+	background-color: var(--ilt-bottom, #fbe3e3);
+}
+
+.ilt table.ilt-standing tbody tr.ilt-row--highlight {
+	background-color: var(--ilt-highlight, #fff1b8);
+	font-weight: 700;
+}
+
+.ilt table.ilt-standing tbody tr.ilt-row--highlight th.ilt-team {
+	font-weight: 700;
+}
+
+.ilt a.ilt-team-name {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ilt a.ilt-team-name:hover,
+.ilt a.ilt-team-name:focus {
+	text-decoration: underline;
+}
+
+.ilt .ilt-legend {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 4px 16px;
+	margin: 6px 0 0;
+	padding: 0;
+	font-size: 0.85em;
+	list-style: none;
+}
+
+.ilt .ilt-legend__item {
+	display: inline-flex;
+	align-items: center;
+	gap: 6px;
+	margin: 0;
+}
+
+.ilt .ilt-legend__swatch {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	border-radius: 2px;
+}
+
+.ilt .ilt-legend__item--top .ilt-legend__swatch {
+	background: var(--ilt-top, #dff3e4);
+}
+
+.ilt .ilt-legend__item--bottom .ilt-legend__swatch {
+	background: var(--ilt-bottom, #fbe3e3);
+}
+
+.ilt .ilt-footer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	gap: 4px 16px;
+	margin: 6px 0 0;
+	font-size: 0.8em;
+	opacity: 0.8;
+}
+
+/* ---- Optional dark mode (dark_mode="true"): follows the visitor's device setting.
+   !important is needed to win over the inline custom properties. ---- */
+@media (prefers-color-scheme: dark) {
+	.ilt.ilt--auto-dark {
+		--ilt-head-bg: #000000 !important;
+		--ilt-head-fg: #f5f5f5 !important;
+		--ilt-text: #e5e5e5 !important;
+		--ilt-odd: #1e1e1e !important;
+		--ilt-even: #2a2a2a !important;
+		--ilt-top: #173b24 !important;
+		--ilt-bottom: #4a1c1c !important;
+		--ilt-highlight: #4d3d00 !important;
+	}
+}
+
+/* Narrow containers: advanced tables drop wins/draws/losses (then goals) instead of scrolling sideways.
+   Browsers without container queries keep the horizontal scroll. */
+@container ilt (max-width: 420px) {
+	.ilt.ilt--advanced table.ilt-standing,
+	table.ilt-standing {
+		min-width: 0;
+	}
+
+	table.ilt-standing .ilt-col-wins,
+	table.ilt-standing .ilt-col-draws,
+	table.ilt-standing .ilt-col-losses,
+	table.ilt-standing .ilt-wins,
+	table.ilt-standing .ilt-draws,
+	table.ilt-standing .ilt-losses {
+		display: none;
+	}
+
+	/* Long team names wrap instead of widening the table. */
+	.ilt table.ilt-standing tbody th.ilt-team {
+		white-space: normal;
+	}
+}
+
+@container ilt (max-width: 340px) {
+	table.ilt-standing .ilt-col-goals,
+	table.ilt-standing .ilt-goals {
+		display: none;
+	}
+}
+
+.ilt-editor-notice {
+	margin: 0 0 0.5em;
+	padding: 0.5em 0.75em;
+	border-inline-start: 4px solid #dba617;
+	background: #fcf9e8;
+	color: #1d2327;
+	font-size: 0.875em;
+}

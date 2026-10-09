@@ -1,0 +1,6 @@
+# Paths (relative to the plugin folder) left out of the release zip by bin/build-zip.sh.
+# Repo-level dev files (composer.*, tests/, phpcs.xml.dist, node_modules, ...) live outside the plugin folder already.
+data/*
+.DS_Store
+*/.DS_Store
+*.tmp

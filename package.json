@@ -1,0 +1,19 @@
+{
+  "name": "iranian-league-table",
+  "private": true,
+  "description": "Build tooling for the Iranian League Table block.",
+  "license": "GPL-3.0-or-later",
+  "scripts": {
+    "build": "wp-scripts build --webpack-src-dir=src --output-path=wp-content/plugins/iranian-league-table/build",
+    "start": "wp-scripts start --webpack-src-dir=src --output-path=wp-content/plugins/iranian-league-table/build",
+    "lint:js": "wp-scripts lint-js src wp-content/plugins/iranian-league-table/assets/js",
+    "env:start": "wp-env start",
+    "env:stop": "wp-env stop",
+    "test:integration": "wp-env run tests-cli --env-cwd=ilt-repo vendor/bin/phpunit -c phpunit-integration.xml.dist",
+    "test:integration:multisite": "wp-env run tests-cli --env-cwd=ilt-repo env WP_MULTISITE=1 vendor/bin/phpunit -c phpunit-integration.xml.dist"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^10.39.0",
+    "@wordpress/scripts": "^30.0.0"
+  }
+}

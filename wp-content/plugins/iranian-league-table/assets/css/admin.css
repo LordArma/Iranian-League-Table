@@ -1,0 +1,344 @@
+/* League Table admin pages. Logical properties keep the layout right in RTL (Persian) and LTR. */
+
+.ilt-admin .description {
+	max-width: 70em;
+}
+
+/* ---- Builder layout: form first (right in RTL), preview second ---- */
+.ilt-builder {
+	display: grid;
+	grid-template-columns: minmax(300px, 420px) minmax(0, 1fr);
+	gap: 24px;
+	align-items: start;
+	margin-block-start: 16px;
+}
+
+@media (max-width: 960px) {
+	.ilt-builder {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
+
+.ilt-builder__preview {
+	position: sticky;
+	top: 48px;
+	min-width: 0;
+}
+
+.ilt-builder__preview h2 {
+	margin-block-start: 0;
+}
+
+.ilt-preview {
+	min-height: 120px;
+	padding: 12px;
+	overflow: auto;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	transition: opacity 0.15s;
+}
+
+.ilt-preview.is-loading {
+	opacity: 0.6;
+}
+
+/* ---- Form sections ---- */
+.ilt-section {
+	margin-block-end: 12px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+}
+
+.ilt-section > summary {
+	padding: 10px 14px;
+	font-weight: 600;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.ilt-section > summary:focus-visible {
+	outline: 2px solid #2271b1;
+	outline-offset: -2px;
+}
+
+.ilt-section__body {
+	padding: 4px 14px 14px;
+	border-block-start: 1px solid #f0f0f1;
+}
+
+.ilt-field {
+	margin-block: 12px;
+}
+
+.ilt-field fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.ilt-field__label {
+	display: block;
+	margin-block-end: 6px;
+	font-weight: 600;
+}
+
+/* League radio cards */
+.ilt-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+	gap: 8px;
+}
+
+.ilt-card-choice {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px;
+	background: #f6f7f7;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.ilt-card-choice:has(input:checked) {
+	background: #f0f6fc;
+	border-color: #2271b1;
+	box-shadow: inset 0 0 0 1px #2271b1;
+}
+
+/* Segmented control */
+.ilt-segmented {
+	display: inline-flex;
+	overflow: hidden;
+	border: 1px solid #2271b1;
+	border-radius: 4px;
+}
+
+.ilt-segmented label {
+	position: relative;
+	margin: 0;
+	cursor: pointer;
+}
+
+.ilt-segmented input {
+	position: absolute;
+	opacity: 0;
+}
+
+.ilt-segmented span {
+	display: block;
+	padding: 6px 16px;
+	color: #2271b1;
+}
+
+.ilt-segmented label + label span {
+	border-inline-start: 1px solid #2271b1;
+}
+
+.ilt-segmented input:checked + span {
+	background: #2271b1;
+	color: #fff;
+}
+
+.ilt-segmented input:focus-visible + span {
+	outline: 2px solid #135e96;
+	outline-offset: -4px;
+}
+
+/* Toggle switch */
+.ilt-toggle {
+	display: inline-flex;
+	align-items: center;
+	gap: 10px;
+	cursor: pointer;
+}
+
+.ilt-toggle__input {
+	position: absolute;
+	opacity: 0;
+}
+
+.ilt-toggle__track {
+	position: relative;
+	flex: none;
+	width: 36px;
+	height: 20px;
+	background: #8c8f94;
+	border-radius: 10px;
+	transition: background 0.15s;
+}
+
+.ilt-toggle__track::after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	inset-inline-start: 3px;
+	width: 14px;
+	height: 14px;
+	background: #fff;
+	border-radius: 50%;
+	transition: inset-inline-start 0.15s;
+}
+
+.ilt-toggle__input:checked + .ilt-toggle__track {
+	background: #2271b1;
+}
+
+.ilt-toggle__input:checked + .ilt-toggle__track::after {
+	inset-inline-start: 19px;
+}
+
+.ilt-toggle__input:focus-visible + .ilt-toggle__track {
+	outline: 2px solid #2271b1;
+	outline-offset: 2px;
+}
+
+/* Number + range */
+.ilt-range {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.ilt-range input[type="range"] {
+	flex: 1;
+	min-width: 0;
+}
+
+/* ---- Output ---- */
+.ilt-output {
+	margin-block-start: 24px;
+}
+
+.ilt-output__code {
+	width: 100%;
+	font-size: 14px;
+	text-align: left;
+	background: #f6f7f7;
+}
+
+.ilt-output__actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	margin-block: 8px 16px;
+}
+
+.ilt-output__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	gap: 16px;
+}
+
+.ilt-card {
+	padding: 4px 16px 8px;
+	background: #fff;
+	border: 1px solid #c3c4c7;
+	border-radius: 4px;
+}
+
+.ilt-toast {
+	padding: 4px 10px;
+	color: #00a32a;
+	font-weight: 600;
+	opacity: 0;
+	transition: opacity 0.2s;
+}
+
+.ilt-toast.is-visible {
+	opacity: 1;
+}
+
+.ilt-toast.is-error {
+	color: #d63638;
+}
+
+.ilt-tables .ilt-toast,
+.wrap > .ilt-toast {
+	position: fixed;
+	bottom: 24px;
+	inset-inline-end: 24px;
+	background: #fff;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* ---- Saved tables / settings ---- */
+.ilt-shortcode {
+	display: inline-block;
+	margin-block-end: 4px;
+	direction: ltr;
+}
+
+.ilt-inline-form {
+	display: inline-block;
+	margin-inline-start: 12px;
+}
+
+.ilt-ok {
+	color: #00a32a;
+}
+
+.ilt-bad {
+	color: #d63638;
+}
+
+.ilt-code {
+	padding: 10px;
+	overflow: auto;
+	background: #f6f7f7;
+	text-align: left;
+}
+
+.ilt-help-attributes {
+	max-width: 70em;
+}
+
+/* ---- Builder inside the classic editor modal ---- */
+.ilt-modal #wpadminbar,
+.ilt-modal #adminmenumain,
+.ilt-modal #wpfooter,
+.ilt-modal .notice:not(.ilt-editing),
+.ilt-modal #screen-meta-links {
+	display: none;
+}
+
+html.wp-toolbar:has(.ilt-modal) {
+	padding-top: 0;
+}
+
+.ilt-modal #wpcontent {
+	margin-inline-start: 0;
+	padding-inline-start: 16px;
+}
+
+.ilt-modal .ilt-builder__preview {
+	top: 8px;
+}
+
+.ilt-modal .ilt-output {
+	position: sticky;
+	bottom: 0;
+	z-index: 10;
+	margin-inline: -16px;
+	padding: 4px 16px 0;
+	background: #f0f0f1;
+	box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.ilt-modal .ilt-output h2 {
+	margin-block: 4px;
+	font-size: 13px;
+}
+
+.ilt-modal .ilt-output__actions {
+	margin-block-end: 8px;
+}
+
+/* Saving and importing stay on the full Builder page. */
+.ilt-modal .ilt-output__grid {
+	display: none;
+}

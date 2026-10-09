@@ -15,9 +15,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Build zip (excludes cache files and dev files)
+        run: bin/build-zip.sh
+
+      - name: Unpack for artifact upload
+        run: cd dist && unzip -q iranian-league-table-*.zip
+
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4.3.3
         with:
           name: iranian-league-table
-          path: wp-content/plugins/iranian-league-table
+          path: dist/iranian-league-table
       

@@ -1,0 +1,792 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Iranian League Table\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: iranian-league-table\n"
+
+#: includes/admin/class-ilt-builder-page.php:69
+msgid "%1$s: text may be hard to read (contrast %2$s:1; at least 4.5:1 is recommended)."
+msgstr ""
+
+#: includes/class-ilt-tables.php:118
+msgid "%s (copy)"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:176
+msgid "%s ago"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:131
+msgid "%s post"
+msgid_plural "%s posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/class-ilt-attributes.php:160
+msgid "0 shows the whole table. Handy for sidebars: 5 shows the top five."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:164
+msgid "A saved table gets a short shortcode like [iran_league id=\"12\"]. Change the saved table later and every page that uses it is restyled at once."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:212
+msgid "A saved table, with one option overridden"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:98
+msgid "Actions"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:41
+msgid "Add New Table"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:81
+msgid "Add schema.org data (league and teams) to pages that show a table"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:192
+msgid "Adds a line under the table with the date and time in the Persian calendar."
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:106
+#: includes/class-ilt-attributes.php:56
+msgid "Advanced"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:207
+msgid "Advanced display of the Iranian League One (Azadegan) table"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:172
+msgid "All saved tables"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:232
+msgid "Attribute"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:228
+msgid "Attributes"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:150
+msgid "Background refresh"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:106
+#: includes/class-ilt-attributes.php:55
+msgid "Basic"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:206
+msgid "Basic display of the Iranian Premier League (Persian Gulf) table"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:208
+msgid "Basic display of the Iranian Premier League table without team logos"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:209
+msgid "Basic display of the Iranian Premier League table without team logos and Farsi numbers"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:210
+msgid "Basic display of the Iranian Women's League (Kowsar) without logos"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:60
+msgid "Basic: rank, team, played and points. Advanced: also wins, draws, losses, goals and goal difference."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:149
+msgid "Body font size (px)"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:251
+msgid "Bottom rows background"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:128
+msgid "Cached logos"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:44
+msgid "Change a saved table and every page that uses its shortcode is restyled at once."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:93
+msgid "Choose the options, check the preview, then copy the shortcode into a post, page or text widget. Save it as a table to reuse it everywhere with a short shortcode."
+msgstr ""
+
+#: includes/class-ilt-presets.php:23
+msgid "Classic (default)"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:134
+msgid "Clear logo cache"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:87
+#: includes/class-ilt-block.php:107
+msgid "Colors"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:265
+msgid "Colors and sizes are CSS custom properties on the table wrapper, so a theme can override them:"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:85
+#: includes/class-ilt-block.php:105
+msgid "Content"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:125
+#: includes/admin/class-ilt-builder-page.php:53
+msgid "Copied!"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:118
+msgid "Copy"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:126
+#: includes/admin/class-ilt-builder-page.php:54
+msgid "Copy failed. Select the shortcode and copy it manually."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:155
+msgid "Copy shortcode"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:67
+msgid "Could not reach the editor. Copy the shortcode instead."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:190
+msgid "Could not refresh the league data. See \"Last error\" below."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:264
+msgid "Customizing the look in a theme"
+msgstr ""
+
+#: includes/class-ilt-presets.php:47
+msgid "Damash blue and red"
+msgstr ""
+
+#: includes/class-ilt-presets.php:31
+msgid "Dark"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:90
+msgid "Data status"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:234
+msgid "Default"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:94
+msgid "Delete"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:127
+msgid "Delete this saved table? Pages that use its shortcode will show the default table instead."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:233
+msgid "Description"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:125
+msgid "Diagnostics"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:59
+msgid "Display mode"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:211
+msgid "Display the Iranian Premier League table with the desired color and size"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:91
+msgid "Duplicate"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:90
+msgid "Edit"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:176
+msgid "Edit an existing shortcode"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:63
+#: includes/admin/class-ilt-builder-page.php:100
+msgid "Editing saved table: %s"
+msgstr ""
+
+#: includes/class-ilt-presets.php:39
+msgid "Esteghlal blue"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:72
+msgid "Even rows"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:119
+msgid "Even rows background"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:222
+msgid "Example of Using Shortcode"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:122
+msgid "Fills all color fields at once. You can still adjust each color afterwards."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:210
+msgid "For example 2 for the Asian Champions League places. 0 turns it off."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:228
+msgid "For example 2 for the relegation places. 0 turns it off."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:70
+msgid "Header"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:87
+msgid "Header background"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:139
+msgid "Header font size (px)"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:95
+msgid "Header text"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:59
+msgid "Help"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:83
+msgid "Helps search engines understand the table. On by default."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:175
+msgid "Highlight a team"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:227
+msgid "Highlight bottom rows"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:209
+msgid "Highlight top rows"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:259
+msgid "Highlighted team background"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:179
+msgid "Import"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:165
+msgid "Insert League Table"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:153
+msgid "Insert into post"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:189
+#: includes/admin/class-ilt-tables-list.php:164
+msgid "Invalid request."
+msgstr ""
+
+#: includes/class-ilt-widget.php:24
+msgid "Iranian League Table"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:96
+msgid "Last error"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:95
+msgid "Last successful update"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:94
+#: includes/admin/class-ilt-tables-list.php:59
+#: includes/class-ilt-attributes.php:45
+msgid "League"
+msgstr ""
+
+#: includes/class-ilt-leagues.php:45
+msgid "League Kowsar"
+msgstr ""
+
+#: includes/class-ilt-leagues.php:38
+msgid "League One"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:49
+#: includes/admin/class-ilt-admin.php:166
+msgid "League Table"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:59
+#: includes/admin/class-ilt-admin.php:216
+msgid "League Table Help"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:58
+#: includes/admin/class-ilt-settings-page.php:62
+msgid "League Table Settings"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:189
+msgid "League data refreshed."
+msgstr ""
+
+#: includes/class-ilt-plugin.php:82
+msgid "League table cache lifetime"
+msgstr ""
+
+#: includes/class-ilt-renderer.php:324
+msgid "League table data is temporarily unavailable. Please try again later."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:236
+msgid "Leave empty for the default, e.g. «سقوط»."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:218
+msgid "Leave empty for the default, e.g. «سهمیه آسیایی»."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:235
+msgid "Legend text for bottom rows"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:217
+msgid "Legend text for top rows"
+msgstr ""
+
+#: includes/class-ilt-presets.php:27
+msgid "Light"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:183
+msgid "Link team names to Varzesh3"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:51
+msgid "Loading preview…"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:191
+msgid "Logo cache cleared. Logos will be downloaded again in the background."
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:139
+msgid "Logo folder"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:129
+msgid "Logo size (px)"
+msgstr ""
+
+#: includes/class-ilt-block.php:104
+msgid "Manage saved tables"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:58
+msgid "Name"
+msgstr ""
+
+#: includes/class-ilt-presets.php:51
+msgid "Neutral gray"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:158
+msgid "Next run: %s"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:111
+#: includes/class-ilt-widget.php:102
+msgid "No"
+msgstr ""
+
+#: includes/class-ilt-rest.php:163
+msgid "No [iran_league] shortcode found in the pasted text."
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:77
+msgid "No saved tables yet. Build one in the Shortcode Builder and click \"Save as table\"."
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:158
+msgid "Not scheduled"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:145
+msgid "Not writable: logos are loaded from Varzesh3 instead."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:159
+msgid "Number of rows"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:71
+msgid "Odd rows"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:111
+msgid "Odd rows background"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:219
+msgid "Open the Shortcode Builder"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:59
+msgid "Options reset to defaults."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:177
+msgid "Paste a shortcode from one of your pages to load its options into the form."
+msgstr ""
+
+#: includes/class-ilt-presets.php:43
+msgid "Persepolis red"
+msgstr ""
+
+#: includes/class-ilt-leagues.php:31
+#: includes/class-ilt-widget.php:60
+msgid "Persian Gulf League"
+msgstr ""
+
+#: includes/class-ilt-presets.php:35
+msgid "Persian Gulf blue"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:79
+msgid "Persian digits"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:60
+msgid "Preset applied."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:141
+msgid "Preview"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:69
+msgid "Refresh data every"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:117
+msgid "Refresh now"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:156
+#: includes/class-ilt-block.php:111
+msgid "Reset to defaults"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:103
+msgid "Row text"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:171
+msgid "Save as a new table"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:163
+msgid "Save as a reusable table"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:64
+#: includes/admin/class-ilt-builder-page.php:170
+msgid "Save as table"
+msgstr ""
+
+#: includes/class-ilt-tables.php:38
+msgid "Saved Table"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:57
+#: includes/admin/class-ilt-admin.php:57
+#: includes/admin/class-ilt-tables-list.php:40
+#: includes/class-ilt-tables.php:37
+msgid "Saved Tables"
+msgstr ""
+
+#: includes/class-ilt-block.php:101
+msgid "Saved table"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:193
+msgid "Saved table deleted."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:192
+msgid "Saved table duplicated."
+msgstr ""
+
+#: includes/class-ilt-rest.php:189
+#: includes/class-ilt-rest.php:232
+#: includes/class-ilt-tables.php:92
+#: includes/class-ilt-tables.php:115
+msgid "Saved table not found."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:240
+msgid "Saved table to use. Other attributes override its options."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:58
+msgid "Settings"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:148
+#: includes/admin/class-ilt-tables-list.php:60
+msgid "Shortcode"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:48
+#: includes/admin/class-ilt-admin.php:56
+#: includes/admin/class-ilt-admin.php:56
+#: includes/admin/class-ilt-admin.php:177
+#: includes/admin/class-ilt-builder-page.php:92
+msgid "Shortcode Builder"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:57
+msgid "Shortcode imported."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:199
+msgid "Show \"Source: Varzesh3\" link"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:167
+msgid "Show only the rows around a team"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:69
+msgid "Show team logos"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:191
+msgid "Show when the table was last updated"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:97
+msgid "Shown on the site"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:186
+#: includes/admin/class-ilt-settings-page.php:207
+#: includes/admin/class-ilt-tables-list.php:174
+msgid "Sorry, you are not allowed to do that."
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:73
+msgid "Standings are refreshed in the background, so visitors never wait for Varzesh3. Shorter times show results sooner but send more requests. Default: 5 minutes."
+msgstr ""
+
+#: includes/class-ilt-block.php:103
+msgid "Start from a saved table. Options you change below override it for this block only."
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:77
+msgid "Structured data"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:66
+#: includes/admin/class-ilt-builder-page.php:166
+msgid "Table name"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:55
+msgid "Table saved."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:168
+msgid "Team name as written on Varzesh3, e.g. استقلال. Shows that team with two rows above and below it."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:176
+msgid "Team name as written on Varzesh3, e.g. پرسپولیس. Its row is shown in bold with the highlight color."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:194
+msgid "The action could not be completed."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:218
+msgid "The easiest way to make a table is the Shortcode Builder: pick the options, check the preview, and copy the shortcode into any post, page or widget."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:52
+msgid "The preview could not be loaded."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:143
+msgid "The preview uses the same code and live data as your site. Your theme's fonts may make it look slightly different."
+msgstr ""
+
+#: includes/class-ilt-api.php:128
+msgid "The response is not valid standings data"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:58
+msgid "The shortcode could not be imported."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:56
+msgid "The table could not be saved."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:115
+#: includes/class-ilt-block.php:109
+#: includes/class-ilt-widget.php:76
+msgid "Theme preset"
+msgstr ""
+
+#: includes/class-ilt-widget.php:64
+msgid "Title:"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:267
+msgid "To change the markup, copy templates/table.php from the plugin folder to iranian-league-table/table.php inside your theme."
+msgstr ""
+
+#: includes/class-ilt-attributes.php:243
+msgid "Top rows background"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:88
+#: includes/class-ilt-block.php:108
+msgid "Typography & sizes"
+msgstr ""
+
+#: includes/class-ilt-api.php:124
+msgid "Unexpected HTTP status %d"
+msgstr ""
+
+#: includes/class-ilt-shortcode.php:57
+msgid "Unknown league \"%1$s\", so %2$s is shown. Use one of: %3$s. Only editors see this message."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:65
+#: includes/admin/class-ilt-builder-page.php:170
+msgid "Update table"
+msgstr ""
+
+#: includes/class-ilt-attributes.php:267
+msgid "Use dark colors when the visitor's device is in dark mode"
+msgstr ""
+
+#: includes/admin/class-ilt-tables-list.php:61
+msgid "Used in"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:155
+msgid "WP-Cron is disabled (DISABLE_WP_CRON). Make sure a real cron job calls wp-cron.php, or the data will only update when you click \"Refresh now\"."
+msgstr ""
+
+#: includes/class-ilt-widget.php:26
+msgid "Widget to display Iranian leagues table"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:143
+msgid "Writable"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:111
+#: includes/class-ilt-widget.php:101
+msgid "Yes"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:61
+msgid "You have changes that are not saved to this table yet. The shortcode below applies them only where you paste it; click \"Update table\" to change every page that uses this table."
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:86
+#: includes/class-ilt-block.php:106
+msgid "Zones"
+msgstr ""
+
+#: build/standings/block.json
+msgctxt "block description"
+msgid "Iranian football league standings in Persian (Persian Gulf, Azadegan or Kowsar)."
+msgstr ""
+
+#: build/standings/block.json
+msgctxt "block keyword"
+msgid "football"
+msgstr ""
+
+#: build/standings/block.json
+msgctxt "block keyword"
+msgid "league"
+msgstr ""
+
+#: build/standings/block.json
+msgctxt "block keyword"
+msgid "standings"
+msgstr ""
+
+#: build/standings/block.json
+msgctxt "block keyword"
+msgid "جدول"
+msgstr ""
+
+#: build/standings/block.json
+msgctxt "block keyword"
+msgid "فوتبال"
+msgstr ""
+
+#: build/standings/block.json
+msgctxt "block keyword"
+msgid "لیگ"
+msgstr ""
+
+#: build/standings/block.json
+msgctxt "block title"
+msgid "League Table"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:176
+msgid "in %s"
+msgstr ""
+
+#: includes/admin/class-ilt-settings-page.php:72
+msgid "minutes"
+msgstr ""
+
+#: includes/admin/class-ilt-builder-page.php:117
+#: includes/class-ilt-block.php:110
+#: includes/class-ilt-widget.php:79
+msgid "— Choose a preset —"
+msgstr ""
+
+#: includes/class-ilt-block.php:102
+msgid "— None (use the options below) —"
+msgstr ""

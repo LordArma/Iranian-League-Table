@@ -53,9 +53,15 @@ wp-config.php
 # Local program files
 /local-xdebuginfo.php
 
-# Table data
-/wp-content/plugins/iranian-league-table/data/*
-!/wp-content/plugins/iranian-league-table/data/index.php
+# Table data (cache folder used by versions before 4.0)
+/wp-content/plugins/iranian-league-table/data/
 
 #macOS files
 .DS_Store
+# Built plugin zips
+/dist/
+
+# Dev dependencies
+/vendor/
+/node_modules/
+/.phpunit.result.cache

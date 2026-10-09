@@ -1,0 +1,685 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Iranian League Table\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-26 20:15+0000\n"
+"PO-Revision-Date: 2025-04-06 02:33+0000\n"
+"Last-Translator: \n"
+"Language-Team: فارسی\n"
+"Language: fa_IR\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.7.1; wp-6.7.2\n"
+"X-Domain: iranian-league-table"
+
+#: includes/iranianleaguetable-class.php:128
+msgid "Advanced"
+msgstr "پیشرفته"
+
+#: includes/iranianleaguetable-settings.php:18
+msgid "Advanced display of the Iranian League One (Azadegan) table"
+msgstr "نمایش پیشرفته جدول لیگ یک ایران (آزادگان)."
+
+#. Author of the plugin
+msgid "Arma"
+msgstr "آرما"
+
+#: includes/iranianleaguetable-class.php:125
+msgid "Basic"
+msgstr "پایه"
+
+#: includes/iranianleaguetable-settings.php:11
+msgid "Basic display of the Iranian Premier League (Persian Gulf) table"
+msgstr "‌نمایش مدل پایه جدول لیگ برتر ایران (خلیج فارس)"
+
+#: includes/iranianleaguetable-settings.php:25
+msgid "Basic display of the Iranian Premier League table without team logos"
+msgstr "‌نمایش مدل پایه جدول لیگ برتر ایران بدون لوگوی تیم‌ها"
+
+#: includes/iranianleaguetable-settings.php:32
+msgid ""
+"Basic display of the Iranian Premier League table without team logos and "
+"Farsi numbers"
+msgstr "نمایش مدل پایه جدول لیگ برتر ایران بدون لوگوی تیم‌ها با اعداد فارسی"
+
+#: includes/iranianleaguetable-class.php:211
+msgid "Body Font Size:"
+msgstr "اندازه فونت بدنه:"
+
+#. Description of the plugin
+msgid ""
+"Display the Iranian Persian Gulf Pro League, League One (Azadegan) or "
+"Women's League (Kowsar) standings in Farsi, as a widget or with the "
+"[iran_league] shortcode."
+msgstr ""
+"نمایش جدول لیگ برتر خلیج فارس، لیگ یک (آزادگان) یا لیگ بانوان (کوثر) به "
+"فارسی، به صورت ابزارک یا با کد کوتاه [iran_league]."
+
+#: includes/iranianleaguetable-settings.php:39
+msgid ""
+"Display the Iranian Premier League table with the desired color and size"
+msgstr "نمایش جدول لیگ برتر ایران با رنگ و اندازه دلخواه"
+
+#: includes/iranianleaguetable-class.php:253
+msgid "Even Rows Color:"
+msgstr "رنگ سطرهای زوج:"
+
+#: includes/iranianleaguetable-settings.php:7
+msgid "Example of Using Shortcode"
+msgstr "چند مثال از شیوه استفاده"
+
+#: includes/iranianleaguetable-class.php:267
+msgid "Farsi Numbers:"
+msgstr "اعداد فارسی"
+
+#: includes/iranianleaguetable-class.php:197
+msgid "Header Font Size:"
+msgstr "اندازه فونت عنوان:"
+
+#. URI of the plugin
+msgid "https://github.com/LordArma/Iranian-League-Table"
+msgstr "https://github.com/LordArma/Iranian-League-Table"
+
+#. Author URI of the plugin
+msgid "https://LordArma.com"
+msgstr "https://LordArma.com"
+
+#. Name of the plugin
+#: includes/iranianleaguetable-class.php:13
+msgid "Iranian League Table"
+msgstr "جدول لیگ ایران"
+
+#: includes/iranianleaguetable-class.php:109
+#| msgid "League Kosar"
+msgid "League Kowsar"
+msgstr "لیگ کوثر"
+
+#: includes/iranianleaguetable-class.php:95
+msgid "LEAGUE NAME:"
+msgstr "نام لیگ:"
+
+#: includes/iranianleaguetable-class.php:106
+msgid "League One"
+msgstr "لیگ یک"
+
+#: iranianleaguetable.php:73 iranianleaguetable.php:74
+msgid "League Table"
+msgstr "جدول لیگ"
+
+#: includes/iranianleaguetable-class.php:183
+msgid "Logo Size:"
+msgstr "اندازه لوگو:"
+
+#: includes/iranianleaguetable-class.php:175
+#: includes/iranianleaguetable-class.php:278
+msgid "No"
+msgstr "خیر"
+
+#: includes/iranianleaguetable-class.php:239
+msgid "Odd Rows Color:"
+msgstr "رنگ سطرهای فرد:"
+
+#: includes/iranianleaguetable-class.php:103
+msgid "Persian Gulf"
+msgstr "خلیج فارس"
+
+#: includes/iranianleaguetable-class.php:62
+msgid "Persian Gulf League"
+msgstr "لیگ خلیج فارس"
+
+#: includes/iranianleaguetable-class.php:164
+msgid "Show Logo:"
+msgstr "نمایش لوگو:"
+
+#: includes/iranianleaguetable-class.php:117
+msgid "Table Type:"
+msgstr "نوع جدول:"
+
+#: includes/iranianleaguetable-class.php:225
+msgid "Text Color:"
+msgstr "رنگ متن:"
+
+#: includes/iranianleaguetable-class.php:136
+msgid "Title Background Color:"
+msgstr "رنگ پس‌زمینه عنوان:"
+
+#: includes/iranianleaguetable-class.php:150
+msgid "Title Text Color:"
+msgstr "رنگ متن عنوان:"
+
+#: includes/iranianleaguetable-class.php:81
+msgid "Title:"
+msgstr "عنوان ابزارک:"
+
+#: includes/iranianleaguetable-class.php:14
+msgid "Widget to display Iranian leagues table"
+msgstr "ویجت برای نمایش جدول لیگ‌های ایران"
+
+#: includes/iranianleaguetable-class.php:172
+#: includes/iranianleaguetable-class.php:275
+msgid "Yes"
+msgstr "بله"
+
+#: includes/iranianleaguetable-parser.php
+msgid "League table data is temporarily unavailable. Please try again later."
+msgstr "اطلاعات جدول لیگ در حال حاضر در دسترس نیست. لطفاً بعداً دوباره تلاش کنید."
+
+msgid "Basic: rank, team, played and points. Advanced: also wins, draws, losses, goals and goal difference."
+msgstr "پایه: رتبه، تیم، تعداد بازی و امتیاز. پیشرفته: به‌علاوه برد، مساوی، باخت، گل‌ها و تفاضل گل."
+
+msgid "Body font size (px)"
+msgstr "اندازه فونت بدنه (پیکسل)"
+
+msgid "Display mode"
+msgstr "نوع نمایش"
+
+msgid "Even rows background"
+msgstr "پس‌زمینه سطرهای زوج"
+
+msgid "Header background"
+msgstr "پس‌زمینه سرستون‌ها"
+
+msgid "Header font size (px)"
+msgstr "اندازه فونت سرستون‌ها (پیکسل)"
+
+msgid "Header text"
+msgstr "رنگ متن سرستون‌ها"
+
+msgid "League"
+msgstr "لیگ"
+
+msgid "League table cache lifetime"
+msgstr "مدت نگهداری حافظه موقت جدول لیگ"
+
+msgid "Logo size (px)"
+msgstr "اندازه لوگو (پیکسل)"
+
+msgid "Odd rows background"
+msgstr "پس‌زمینه سطرهای فرد"
+
+msgid "Persian digits"
+msgstr "اعداد فارسی"
+
+msgid "Row text"
+msgstr "رنگ متن سطرها"
+
+msgid "Show team logos"
+msgstr "نمایش لوگوی تیم‌ها"
+
+msgid "The response is not valid standings data"
+msgstr "پاسخ دریافتی، اطلاعات معتبر جدول لیگ نیست"
+
+#, php-format
+msgid "Unexpected HTTP status %d"
+msgstr "وضعیت HTTP غیرمنتظره: %d"
+
+#, php-format
+msgid "%s (copy)"
+msgstr "%s (رونوشت)"
+
+#, php-format
+msgid "%s ago"
+msgstr "%s پیش"
+
+#, php-format
+msgid "%s post"
+msgid_plural "%s posts"
+msgstr[0] "%s نوشته"
+msgstr[1] "%s نوشته"
+
+msgid "A saved table gets a short shortcode like [iran_league id=\"12\"]. Change the saved table later and every page that uses it is restyled at once."
+msgstr "جدول ذخیره‌شده یک کد کوتاه ساده مثل [iran_league id=\"12\"] می‌گیرد. اگر بعداً جدول ذخیره‌شده را تغییر دهید، همه صفحه‌هایی که از آن استفاده می‌کنند یک‌جا به‌روز می‌شوند."
+
+msgid "A saved table, with one option overridden"
+msgstr "یک جدول ذخیره‌شده که یکی از تنظیماتش جایگزین شده است"
+
+msgid "Actions"
+msgstr "عملیات"
+
+msgid "Add New Table"
+msgstr "افزودن جدول تازه"
+
+msgid "All saved tables"
+msgstr "همه جدول‌های ذخیره‌شده"
+
+msgid "Attribute"
+msgstr "ویژگی"
+
+msgid "Attributes"
+msgstr "ویژگی‌ها"
+
+msgid "Background refresh"
+msgstr "به‌روزرسانی در پس‌زمینه"
+
+msgid "Basic display of the Iranian Women's League (Kowsar) without logos"
+msgstr "نمایش مدل پایه جدول لیگ بانوان ایران (کوثر) بدون لوگو"
+
+msgid "Cached logos"
+msgstr "لوگوهای ذخیره‌شده"
+
+msgid "Change a saved table and every page that uses its shortcode is restyled at once."
+msgstr "با تغییر یک جدول ذخیره‌شده، همه صفحه‌هایی که از کد کوتاه آن استفاده می‌کنند یک‌جا به‌روز می‌شوند."
+
+msgid "Choose the options, check the preview, then copy the shortcode into a post, page or text widget. Save it as a table to reuse it everywhere with a short shortcode."
+msgstr "تنظیمات را انتخاب کنید، پیش‌نمایش را ببینید و سپس کد کوتاه را در یک نوشته، برگه یا ابزارک متنی قرار دهید. با ذخیره به‌عنوان جدول، می‌توانید آن را با یک کد کوتاه ساده همه‌جا استفاده کنید."
+
+msgid "Classic (default)"
+msgstr "کلاسیک (پیش‌فرض)"
+
+msgid "Clear logo cache"
+msgstr "پاک کردن لوگوهای ذخیره‌شده"
+
+msgid "Colors"
+msgstr "رنگ‌ها"
+
+msgid "Colors and sizes are CSS custom properties on the table wrapper, so a theme can override them:"
+msgstr "رنگ‌ها و اندازه‌ها به‌صورت متغیرهای CSS روی جدول تعریف شده‌اند و پوسته می‌تواند آن‌ها را تغییر دهد:"
+
+msgid "Content"
+msgstr "محتوا"
+
+msgid "Copied!"
+msgstr "کپی شد!"
+
+msgid "Copy"
+msgstr "کپی"
+
+msgid "Copy failed. Select the shortcode and copy it manually."
+msgstr "کپی انجام نشد. کد کوتاه را انتخاب کنید و دستی کپی کنید."
+
+msgid "Copy shortcode"
+msgstr "کپی کد کوتاه"
+
+msgid "Could not reach the editor. Copy the shortcode instead."
+msgstr "دسترسی به ویرایشگر ممکن نشد. لطفاً کد کوتاه را کپی کنید."
+
+msgid "Could not refresh the league data. See \"Last error\" below."
+msgstr "به‌روزرسانی اطلاعات لیگ انجام نشد. ستون «آخرین خطا» را در پایین ببینید."
+
+msgid "Customizing the look in a theme"
+msgstr "سفارشی‌سازی ظاهر در پوسته"
+
+msgid "Damash blue and red"
+msgstr "داماش"
+
+msgid "Dark"
+msgstr "تیره"
+
+msgid "Data status"
+msgstr "وضعیت اطلاعات"
+
+msgid "Default"
+msgstr "پیش‌فرض"
+
+msgid "Delete"
+msgstr "حذف"
+
+msgid "Delete this saved table? Pages that use its shortcode will show the default table instead."
+msgstr "این جدول ذخیره‌شده حذف شود؟ صفحه‌هایی که از کد کوتاه آن استفاده می‌کنند، جدول پیش‌فرض را نمایش خواهند داد."
+
+msgid "Description"
+msgstr "توضیح"
+
+msgid "Diagnostics"
+msgstr "عیب‌یابی"
+
+msgid "Duplicate"
+msgstr "رونوشت"
+
+msgid "Edit"
+msgstr "ویرایش"
+
+msgid "Edit an existing shortcode"
+msgstr "ویرایش یک کد کوتاه موجود"
+
+#, php-format
+msgid "Editing saved table: %s"
+msgstr "در حال ویرایش جدول ذخیره‌شده: %s"
+
+msgid "Esteghlal blue"
+msgstr "آبی استقلال"
+
+msgid "Fills all color fields at once. You can still adjust each color afterwards."
+msgstr "همه رنگ‌ها را یک‌جا پر می‌کند. بعد از آن هم می‌توانید هر رنگ را جداگانه تغییر دهید."
+
+msgid "Help"
+msgstr "راهنما"
+
+msgid "Import"
+msgstr "بارگذاری"
+
+msgid "Insert League Table"
+msgstr "افزودن جدول لیگ"
+
+msgid "Insert into post"
+msgstr "افزودن به نوشته"
+
+msgid "Invalid request."
+msgstr "درخواست نامعتبر است."
+
+msgid "Last error"
+msgstr "آخرین خطا"
+
+msgid "Last successful update"
+msgstr "آخرین به‌روزرسانی موفق"
+
+msgid "League Table Help"
+msgstr "راهنمای جدول لیگ"
+
+msgid "League Table Settings"
+msgstr "تنظیمات جدول لیگ"
+
+msgid "League data refreshed."
+msgstr "اطلاعات لیگ به‌روز شد."
+
+msgid "Light"
+msgstr "روشن"
+
+msgid "Loading preview…"
+msgstr "در حال بارگذاری پیش‌نمایش…"
+
+msgid "Logo cache cleared. Logos will be downloaded again in the background."
+msgstr "لوگوهای ذخیره‌شده پاک شدند. لوگوها دوباره در پس‌زمینه دریافت می‌شوند."
+
+msgid "Logo folder"
+msgstr "پوشه لوگوها"
+
+msgid "Name"
+msgstr "نام"
+
+msgid "Neutral gray"
+msgstr "خاکستری ساده"
+
+#, php-format
+msgid "Next run: %s"
+msgstr "اجرای بعدی: %s"
+
+msgid "No [iran_league] shortcode found in the pasted text."
+msgstr "در متن واردشده هیچ کد کوتاه [iran_league] پیدا نشد."
+
+msgid "No saved tables yet. Build one in the Shortcode Builder and click \"Save as table\"."
+msgstr "هنوز جدولی ذخیره نشده است. در سازنده کد کوتاه یک جدول بسازید و روی «ذخیره به‌عنوان جدول» کلیک کنید."
+
+msgid "Not scheduled"
+msgstr "زمان‌بندی نشده"
+
+msgid "Not writable: logos are loaded from Varzesh3 instead."
+msgstr "قابل نوشتن نیست؛ لوگوها مستقیماً از ورزش سه بارگذاری می‌شوند."
+
+msgid "Open the Shortcode Builder"
+msgstr "باز کردن سازنده کد کوتاه"
+
+msgid "Options reset to defaults."
+msgstr "تنظیمات به حالت پیش‌فرض برگشت."
+
+msgid "Paste a shortcode from one of your pages to load its options into the form."
+msgstr "کد کوتاه یکی از صفحه‌هایتان را اینجا قرار دهید تا تنظیماتش در فرم بارگذاری شود."
+
+msgid "Persepolis red"
+msgstr "قرمز پرسپولیس"
+
+msgid "Persian Gulf blue"
+msgstr "آبی خلیج فارس"
+
+msgid "Preset applied."
+msgstr "قالب رنگی اعمال شد."
+
+msgid "Preview"
+msgstr "پیش‌نمایش"
+
+msgid "Refresh data every"
+msgstr "به‌روزرسانی اطلاعات هر"
+
+msgid "Refresh now"
+msgstr "به‌روزرسانی الان"
+
+msgid "Reset to defaults"
+msgstr "بازگشت به پیش‌فرض"
+
+msgid "Save as a new table"
+msgstr "ذخیره به‌عنوان جدول تازه"
+
+msgid "Save as a reusable table"
+msgstr "ذخیره به‌عنوان جدول قابل استفاده مجدد"
+
+msgid "Save as table"
+msgstr "ذخیره به‌عنوان جدول"
+
+msgid "Saved Table"
+msgstr "جدول ذخیره‌شده"
+
+msgid "Saved Tables"
+msgstr "جدول‌های ذخیره‌شده"
+
+msgid "Saved table deleted."
+msgstr "جدول ذخیره‌شده حذف شد."
+
+msgid "Saved table duplicated."
+msgstr "از جدول ذخیره‌شده رونوشت گرفته شد."
+
+msgid "Saved table not found."
+msgstr "جدول ذخیره‌شده پیدا نشد."
+
+msgid "Saved table to use. Other attributes override its options."
+msgstr "جدول ذخیره‌شده‌ای که استفاده می‌شود. ویژگی‌های دیگر، تنظیمات آن را تغییر می‌دهند."
+
+msgid "Settings"
+msgstr "تنظیمات"
+
+msgid "Shortcode"
+msgstr "کد کوتاه"
+
+msgid "Shortcode Builder"
+msgstr "سازنده کد کوتاه"
+
+msgid "Shortcode imported."
+msgstr "کد کوتاه بارگذاری شد."
+
+msgid "Shown on the site"
+msgstr "نمایش در سایت"
+
+msgid "Sorry, you are not allowed to do that."
+msgstr "متأسفیم، شما اجازه انجام این کار را ندارید."
+
+msgid "Standings are refreshed in the background, so visitors never wait for Varzesh3. Shorter times show results sooner but send more requests. Default: 5 minutes."
+msgstr "جدول‌ها در پس‌زمینه به‌روز می‌شوند، پس بازدیدکنندگان هیچ‌وقت منتظر ورزش سه نمی‌مانند. زمان کوتاه‌تر نتایج را زودتر نشان می‌دهد ولی درخواست بیشتری می‌فرستد. پیش‌فرض: ۵ دقیقه."
+
+msgid "Table name"
+msgstr "نام جدول"
+
+msgid "Table saved."
+msgstr "جدول ذخیره شد."
+
+msgid "The action could not be completed."
+msgstr "این کار انجام نشد."
+
+msgid "The easiest way to make a table is the Shortcode Builder: pick the options, check the preview, and copy the shortcode into any post, page or widget."
+msgstr "ساده‌ترین راه ساختن جدول، سازنده کد کوتاه است: تنظیمات را انتخاب کنید، پیش‌نمایش را ببینید و کد کوتاه را در هر نوشته، برگه یا ابزارکی قرار دهید."
+
+msgid "The preview could not be loaded."
+msgstr "پیش‌نمایش بارگذاری نشد."
+
+msgid "The preview uses the same code and live data as your site. Your theme's fonts may make it look slightly different."
+msgstr "پیش‌نمایش از همان کد و اطلاعات زنده سایت شما استفاده می‌کند. فونت‌های پوسته ممکن است ظاهر را کمی متفاوت کنند."
+
+msgid "The shortcode could not be imported."
+msgstr "کد کوتاه بارگذاری نشد."
+
+msgid "The table could not be saved."
+msgstr "جدول ذخیره نشد."
+
+msgid "Theme preset"
+msgstr "قالب رنگی"
+
+msgid "To change the markup, copy templates/table.php from the plugin folder to iranian-league-table/table.php inside your theme."
+msgstr "برای تغییر ساختار HTML، فایل templates/table.php افزونه را در مسیر iranian-league-table/table.php داخل پوسته خود کپی کنید."
+
+msgid "Typography & sizes"
+msgstr "فونت و اندازه‌ها"
+
+msgid "Update table"
+msgstr "به‌روزرسانی جدول"
+
+msgid "Used in"
+msgstr "استفاده‌شده در"
+
+msgid "WP-Cron is disabled (DISABLE_WP_CRON). Make sure a real cron job calls wp-cron.php, or the data will only update when you click \"Refresh now\"."
+msgstr "WP-Cron غیرفعال است (DISABLE_WP_CRON). مطمئن شوید یک کرون‌جاب واقعی wp-cron.php را اجرا می‌کند؛ وگرنه اطلاعات فقط با کلیک روی «به‌روزرسانی الان» تازه می‌شود."
+
+msgid "Writable"
+msgstr "قابل نوشتن"
+
+msgid "You have changes that are not saved to this table yet. The shortcode below applies them only where you paste it; click \"Update table\" to change every page that uses this table."
+msgstr "تغییراتی دارید که هنوز در این جدول ذخیره نشده‌اند. کد کوتاه زیر این تغییرات را فقط در جایی که قرارش دهید اعمال می‌کند؛ برای تغییر همه صفحه‌هایی که از این جدول استفاده می‌کنند، روی «به‌روزرسانی جدول» کلیک کنید."
+
+#, php-format
+msgid "in %s"
+msgstr "%s دیگر"
+
+msgid "minutes"
+msgstr "دقیقه"
+
+msgid "— Choose a preset —"
+msgstr "— یک قالب رنگی انتخاب کنید —"
+
+msgid "Manage saved tables"
+msgstr "مدیریت جدول‌های ذخیره‌شده"
+
+msgid "Saved table"
+msgstr "جدول ذخیره‌شده"
+
+msgid "Start from a saved table. Options you change below override it for this block only."
+msgstr "از یک جدول ذخیره‌شده شروع کنید. تنظیماتی که در پایین تغییر می‌دهید فقط برای همین بلوک اعمال می‌شود."
+
+msgid "— None (use the options below) —"
+msgstr "— هیچ‌کدام (از تنظیمات پایین استفاده شود) —"
+
+msgctxt "block description"
+msgid "Iranian football league standings in Persian (Persian Gulf, Azadegan or Kowsar)."
+msgstr "جدول لیگ‌های فوتبال ایران به فارسی (خلیج فارس، آزادگان یا کوثر)."
+
+msgctxt "block keyword"
+msgid "football"
+msgstr "فوتبال"
+
+msgctxt "block keyword"
+msgid "league"
+msgstr "لیگ"
+
+msgctxt "block keyword"
+msgid "standings"
+msgstr "جدول رده‌بندی"
+
+msgctxt "block keyword"
+msgid "جدول"
+msgstr "جدول"
+
+msgctxt "block keyword"
+msgid "لیگ"
+msgstr "لیگ"
+
+msgctxt "block keyword"
+msgid "فوتبال"
+msgstr "فوتبال"
+
+msgctxt "block title"
+msgid "League Table"
+msgstr "جدول لیگ"
+
+#, php-format
+msgid "%1$s: text may be hard to read (contrast %2$s:1; at least 4.5:1 is recommended)."
+msgstr "%1$s: ممکن است متن به‌سختی خوانده شود (کنتراست %2$s:1؛ دست‌کم 4.5:1 پیشنهاد می‌شود)."
+
+msgid "Header"
+msgstr "سرستون‌ها"
+
+msgid "Odd rows"
+msgstr "سطرهای فرد"
+
+msgid "Even rows"
+msgstr "سطرهای زوج"
+
+#, php-format
+msgid "Unknown league \"%1$s\", so %2$s is shown. Use one of: %3$s. Only editors see this message."
+msgstr "لیگ «%1$s» شناخته نشد، بنابراین %2$s نمایش داده می‌شود. یکی از این مقادیر را به کار ببرید: %3$s. این پیام فقط برای ویرایشگران نمایش داده می‌شود."
+
+msgid "0 shows the whole table. Handy for sidebars: 5 shows the top five."
+msgstr "۰ یعنی کل جدول. برای ستون کناری مناسب است: ۵ یعنی پنج تیم اول."
+
+msgid "Add schema.org data (league and teams) to pages that show a table"
+msgstr "افزودن داده‌های schema.org (لیگ و تیم‌ها) به صفحه‌هایی که جدول دارند"
+
+msgid "Adds a line under the table with the date and time in the Persian calendar."
+msgstr "یک خط زیر جدول با تاریخ و ساعت به تقویم شمسی اضافه می‌کند."
+
+msgid "Bottom rows background"
+msgstr "پس‌زمینه سطرهای پایین جدول"
+
+msgid "For example 2 for the Asian Champions League places. 0 turns it off."
+msgstr "مثلاً ۲ برای سهمیه‌های لیگ قهرمانان آسیا. ۰ یعنی خاموش."
+
+msgid "For example 2 for the relegation places. 0 turns it off."
+msgstr "مثلاً ۲ برای تیم‌های سقوط‌کننده. ۰ یعنی خاموش."
+
+msgid "Helps search engines understand the table. On by default."
+msgstr "به موتورهای جستجو کمک می‌کند جدول را بهتر بفهمند. به‌طور پیش‌فرض روشن است."
+
+msgid "Highlight a team"
+msgstr "برجسته کردن یک تیم"
+
+msgid "Highlight bottom rows"
+msgstr "رنگ‌آمیزی سطرهای پایین جدول"
+
+msgid "Highlight top rows"
+msgstr "رنگ‌آمیزی سطرهای بالای جدول"
+
+msgid "Highlighted team background"
+msgstr "پس‌زمینه تیم برجسته"
+
+msgid "Leave empty for the default, e.g. «سقوط»."
+msgstr "برای متن پیش‌فرض خالی بگذارید، مثلاً «سقوط»."
+
+msgid "Leave empty for the default, e.g. «سهمیه آسیایی»."
+msgstr "برای متن پیش‌فرض خالی بگذارید، مثلاً «سهمیه آسیایی»."
+
+msgid "Legend text for bottom rows"
+msgstr "متن راهنما برای سطرهای پایین"
+
+msgid "Legend text for top rows"
+msgstr "متن راهنما برای سطرهای بالا"
+
+msgid "Link team names to Varzesh3"
+msgstr "پیوند نام تیم‌ها به ورزش سه"
+
+msgid "Number of rows"
+msgstr "تعداد سطرها"
+
+msgid "Show \"Source: Varzesh3\" link"
+msgstr "نمایش پیوند «منبع: ورزش سه»"
+
+msgid "Show only the rows around a team"
+msgstr "فقط نمایش سطرهای اطراف یک تیم"
+
+msgid "Show when the table was last updated"
+msgstr "نمایش زمان آخرین به‌روزرسانی جدول"
+
+msgid "Structured data"
+msgstr "داده‌های ساختاریافته"
+
+msgid "Team name as written on Varzesh3, e.g. استقلال. Shows that team with two rows above and below it."
+msgstr "نام تیم همان‌طور که در ورزش سه نوشته شده، مثلاً استقلال. آن تیم را با دو سطر بالا و پایینش نشان می‌دهد."
+
+msgid "Team name as written on Varzesh3, e.g. پرسپولیس. Its row is shown in bold with the highlight color."
+msgstr "نام تیم همان‌طور که در ورزش سه نوشته شده، مثلاً پرسپولیس. سطر آن پررنگ و با رنگ برجسته نمایش داده می‌شود."
+
+msgid "Top rows background"
+msgstr "پس‌زمینه سطرهای بالای جدول"
+
+msgid "Use dark colors when the visitor's device is in dark mode"
+msgstr "استفاده از رنگ‌های تیره وقتی دستگاه بازدیدکننده در حالت تیره است"
+
+msgid "Zones"
+msgstr "رنگ‌بندی جدول"

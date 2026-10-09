@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<ruleset name="Iranian League Table">
+	<description>WordPress Coding Standards + PHP 7.4 compatibility for the plugin.</description>
+
+	<file>wp-content/plugins/iranian-league-table</file>
+	<exclude-pattern>wp-content/plugins/iranian-league-table/data/*</exclude-pattern>
+	<exclude-pattern>wp-content/plugins/iranian-league-table/languages/*</exclude-pattern>
+	<exclude-pattern>wp-content/plugins/iranian-league-table/build/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+
+	<arg name="extensions" value="php"/>
+	<arg name="colors"/>
+	<arg value="sp"/>
+
+	<config name="testVersion" value="7.4-"/>
+	<config name="minimum_wp_version" value="6.0"/>
+
+	<rule ref="WordPress"/>
+	<rule ref="PHPCompatibilityWP"/>
+
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array">
+				<element value="iranian-league-table"/>
+			</property>
+		</properties>
+	</rule>
+
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array">
+				<element value="ilt_"/>
+				<element value="ILT_"/>
+			</property>
+		</properties>
+	</rule>
+
+	<!-- Class files follow the class-ilt-*.php convention; the legacy bootstrap file name must stay. -->
+	<rule ref="WordPress.Files.FileName">
+		<exclude-pattern>wp-content/plugins/iranian-league-table/iranianleaguetable.php</exclude-pattern>
+		<!-- Holds Iranian_League_Widget, whose name is kept for the_widget() calls in themes. -->
+		<exclude-pattern>wp-content/plugins/iranian-league-table/includes/class-ilt-widget.php</exclude-pattern>
+	</rule>
+</ruleset>
