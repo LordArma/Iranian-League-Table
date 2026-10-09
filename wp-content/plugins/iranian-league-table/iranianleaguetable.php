@@ -3,7 +3,7 @@
  * Plugin Name: Iranian League Table
  * Plugin URI: https://github.com/LordArma/Iranian-League-Table
  * Description: Display the Iranian Persian Gulf Pro League, League One (Azadegan) or Women's League (Kowsar) standings in Farsi, as a widget or with the [iran_league] shortcode, designed visually in the Shortcode Builder.
- * Version: 4.4.1
+ * Version: 4.5.0
  * Author: Arma
  * Author URI: https://LordArma.com
  * Text Domain: iranian-league-table
@@ -19,7 +19,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'ILT_VERSION', '4.4.1' );
+define( 'ILT_VERSION', '4.5.0' );
 define( 'ILT_PLUGIN_FILE', __FILE__ );
 define( 'ILT_PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
 

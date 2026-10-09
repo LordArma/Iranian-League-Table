@@ -4,7 +4,7 @@ Tags: football, soccer, league table, standings, persian
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 4.4.1
+Stable tag: 4.5.0
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -69,11 +69,14 @@ Yes. Override the CSS custom properties on `.ilt` (for example `--ilt-head-bg`),
 
 == Changelog ==
 
+= 4.5.0 =
+* Help and readme recommend the League Table block as the easiest way to add a table; new screenshots.
+* Build tools updated (@wordpress/scripts 36, @wordpress/env 11) to fix the security alerts in development dependencies. Nothing in the plugin itself changed for this; the release zip never included them.
+
 = 4.4.1 =
 * New "Damash" color preset (blue and red).
 * Structured data is now on by default. Sites that already saved Settings keep their choice.
 * The old help page under Settings → League Table is removed; help is in League Table → Help.
-* Help and readme now recommend the League Table block as the easiest way to add a table.
 
 = 4.4.0 =
 * Updates from GitHub releases, text domain renamed to the plugin slug, readme.txt.
@@ -94,6 +97,9 @@ Yes. Override the CSS custom properties on `.ilt` (for example `--ilt-head-bg`),
 * Security and reliability fixes.
 
 == Upgrade Notice ==
+
+= 4.5.0 =
+Block editor is now the recommended way to add a table; development dependencies updated.
 
 = 4.4.1 =
 Damash color preset; structured data on by default; the old Settings → League Table help page is removed.
