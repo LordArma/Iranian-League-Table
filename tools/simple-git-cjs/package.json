@@ -1,0 +1,8 @@
+{
+  "name": "simple-git",
+  "version": "4.0.2-cjs",
+  "private": true,
+  "description": "Dev-only shim: simple-git 4 (security fixes) with the v3 callable export that @wordpress/env still uses. Its simple-git 4 copy is the root devDependency simple-git-v4.",
+  "main": "index.js",
+  "license": "MIT"
+}
