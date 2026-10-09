@@ -8,25 +8,36 @@ The tables are displayed in Farsi and can be customized in color and display typ
 
 These tables data are provided by the [Varzesh3](https://www.varzesh3.com/developer-tools) website.
 
+![A Persian Gulf Pro League table with the top and bottom places colored, a highlighted team, a legend and the update time](docs/screenshots/front-end.png)
+
 ## Download
 You can download the last version from: [here](https://github.com/LordArma/Iranian-League-Table/releases).
 
 ## How to use?
-You can use this plugin in two ways:
+You can use this plugin in four ways:
+- **The League Table block** (easiest, recommended)
+- The Shortcode Builder
 - As a Widget
-- As a Shortcode (easiest to create with the built-in Shortcode Builder)
+- As a Shortcode
 
-### Shortcode Builder (recommended)
-In the WordPress admin, open **League Table → Shortcode Builder**. Pick the league, display mode, colors (or a ready-made
-preset) and sizes, watch the live preview, then click **Copy shortcode** and paste it into any post, page or widget.
+### Use the League Table block (recommended)
+Since version 4.2 the table works directly in the block editor, and this is now the easiest way to add it. In a post or
+page, click **+** and add the **League Table** block. Choose a saved table or set the league, mode, colors and sizes in
+the block sidebar; the editor shows the real table while you work, and you don't need a shortcode at all.
+The block also works in block-based widget areas. An existing Shortcode block or pasted `[iran_league ...]` shortcode
+can be converted to the block.
+
+![The League Table block in the block editor, with its options in the sidebar](docs/screenshots/en/block-editor.png)
+
+### Shortcode Builder
+For the classic editor, classic widgets or page builders, open **League Table → Shortcode Builder** in the WordPress
+admin. Pick the league, display mode, colors (or a ready-made preset) and sizes, watch the live preview, then click
+**Copy shortcode** and paste it into any post, page or widget.
 Click **Save as table** to get a short shortcode such as `[iran_league id="12"]`: when you change a saved table later,
 every page that uses it updates at once. In the classic editor, the **League Table** button above the editor opens the
 Builder and inserts the shortcode for you.
 
-### Use the League Table block
-In the block editor, add the **League Table** block. Choose a saved table or set the league, mode, colors and sizes in
-the block sidebar; the editor shows the real table. The block also works in block-based widget areas.
-An existing Shortcode block or pasted `[iran_league ...]` shortcode can be converted to the block.
+![The Shortcode Builder with the Damash preset and a live preview](docs/screenshots/en/shortcode-builder.png)
 
 ### Use Iranian League Table as a Widget
 If your WordPress theme supports legacy widgets, you can easily place your desired table in the appropriate place from the WordPress widgets section and then set its options.

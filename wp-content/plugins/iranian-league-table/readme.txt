@@ -20,8 +20,8 @@ Iranian League Table shows the standings of Iranian football leagues in Persian 
 
 **Ways to add a table**
 
-* **Shortcode Builder** (League Table → Shortcode Builder): pick options, see a live preview, copy the shortcode.
-* **League Table block** for the block editor and block-based widget areas.
+* **League Table block** (easiest, recommended): add it in the block editor or a block-based widget area and set the options in the sidebar. No shortcode needed.
+* **Shortcode Builder** (League Table → Shortcode Builder) for the classic editor, classic widgets and page builders: pick options, see a live preview, copy the shortcode.
 * **Widget** for classic widget areas.
 * **Shortcode** `[iran_league]` anywhere shortcodes work.
 
@@ -40,7 +40,7 @@ Iranian League Table shows the standings of Iranian football leagues in Persian 
 
 1. Upload the plugin zip in Plugins → Add New → Upload Plugin, or copy the `iranian-league-table` folder to `wp-content/plugins/`.
 2. Activate it.
-3. Open League Table → Shortcode Builder, or add the League Table block to a page.
+3. In the block editor, add the League Table block to a post or page (recommended). For the classic editor, use League Table → Shortcode Builder.
 
 == Frequently Asked Questions ==
 
@@ -73,6 +73,7 @@ Yes. Override the CSS custom properties on `.ilt` (for example `--ilt-head-bg`),
 * New "Damash" color preset (blue and red).
 * Structured data is now on by default. Sites that already saved Settings keep their choice.
 * The old help page under Settings → League Table is removed; help is in League Table → Help.
+* Help and readme now recommend the League Table block as the easiest way to add a table.
 
 = 4.4.0 =
 * Updates from GitHub releases, text domain renamed to the plugin slug, readme.txt.

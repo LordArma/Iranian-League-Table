@@ -65,11 +65,11 @@ msgstr ""
 msgid "All saved tables"
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:232
+#: includes/admin/class-ilt-admin.php:236
 msgid "Attribute"
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:228
+#: includes/admin/class-ilt-admin.php:232
 msgid "Attributes"
 msgstr ""
 
@@ -135,7 +135,7 @@ msgstr ""
 msgid "Colors"
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:265
+#: includes/admin/class-ilt-admin.php:269
 msgid "Colors and sizes are CSS custom properties on the table wrapper, so a theme can override them:"
 msgstr ""
 
@@ -170,7 +170,7 @@ msgstr ""
 msgid "Could not refresh the league data. See \"Last error\" below."
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:264
+#: includes/admin/class-ilt-admin.php:268
 msgid "Customizing the look in a theme"
 msgstr ""
 
@@ -186,7 +186,7 @@ msgstr ""
 msgid "Data status"
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:234
+#: includes/admin/class-ilt-admin.php:238
 msgid "Default"
 msgstr ""
 
@@ -198,7 +198,7 @@ msgstr ""
 msgid "Delete this saved table? Pages that use its shortcode will show the default table instead."
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:233
+#: includes/admin/class-ilt-admin.php:237
 msgid "Description"
 msgstr ""
 
@@ -243,7 +243,7 @@ msgstr ""
 msgid "Even rows background"
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:222
+#: includes/admin/class-ilt-admin.php:226
 msgid "Example of Using Shortcode"
 msgstr ""
 
@@ -257,6 +257,10 @@ msgstr ""
 
 #: includes/class-ilt-attributes.php:228
 msgid "For example 2 for the relegation places. 0 turns it off."
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:222
+msgid "For the classic editor, classic widgets or page builders, use the Shortcode Builder: pick the options, check the preview, and copy the shortcode into any post, page or widget."
 msgstr ""
 
 #: includes/admin/class-ilt-builder-page.php:70
@@ -458,7 +462,7 @@ msgstr ""
 msgid "Odd rows background"
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:219
+#: includes/admin/class-ilt-admin.php:223
 msgid "Open the Shortcode Builder"
 msgstr ""
 
@@ -493,6 +497,10 @@ msgstr ""
 
 #: includes/admin/class-ilt-builder-page.php:141
 msgid "Preview"
+msgstr ""
+
+#: includes/admin/class-ilt-admin.php:217
+msgid "Recommended: the League Table block"
 msgstr ""
 
 #: includes/admin/class-ilt-settings-page.php:69
@@ -555,7 +563,7 @@ msgstr ""
 msgid "Saved table not found."
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:240
+#: includes/admin/class-ilt-admin.php:244
 msgid "Saved table to use. Other attributes override its options."
 msgstr ""
 
@@ -572,6 +580,7 @@ msgstr ""
 #: includes/admin/class-ilt-admin.php:56
 #: includes/admin/class-ilt-admin.php:56
 #: includes/admin/class-ilt-admin.php:177
+#: includes/admin/class-ilt-admin.php:220
 #: includes/admin/class-ilt-builder-page.php:92
 msgid "Shortcode Builder"
 msgstr ""
@@ -640,7 +649,7 @@ msgid "The action could not be completed."
 msgstr ""
 
 #: includes/admin/class-ilt-admin.php:218
-msgid "The easiest way to make a table is the Shortcode Builder: pick the options, check the preview, and copy the shortcode into any post, page or widget."
+msgid "The easiest way to show a table is the block editor. In a post or page, click + and add the League Table block, then choose a saved table or set the league, mode and colors in the block sidebar. The editor shows the real table while you work, and no shortcode is needed. The block also works in block-based widget areas."
 msgstr ""
 
 #: includes/admin/class-ilt-builder-page.php:52
@@ -673,7 +682,7 @@ msgstr ""
 msgid "Title:"
 msgstr ""
 
-#: includes/admin/class-ilt-admin.php:267
+#: includes/admin/class-ilt-admin.php:271
 msgid "To change the markup, copy templates/table.php from the plugin folder to iranian-league-table/table.php inside your theme."
 msgstr ""
 

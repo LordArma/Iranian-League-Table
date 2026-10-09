@@ -75,6 +75,9 @@ msgstr "چند مثال از شیوه استفاده"
 msgid "Farsi Numbers:"
 msgstr "اعداد فارسی"
 
+msgid "For the classic editor, classic widgets or page builders, use the Shortcode Builder: pick the options, check the preview, and copy the shortcode into any post, page or widget."
+msgstr "برای ویرایشگر کلاسیک، ابزارک‌های کلاسیک یا صفحه‌سازها از سازنده کد کوتاه استفاده کنید: تنظیمات را انتخاب کنید، پیش‌نمایش را ببینید و کد کوتاه را در هر نوشته، برگه یا ابزارکی قرار دهید."
+
 #: includes/iranianleaguetable-class.php:197
 msgid "Header Font Size:"
 msgstr "اندازه فونت عنوان:"
@@ -130,6 +133,9 @@ msgstr "خلیج فارس"
 msgid "Persian Gulf League"
 msgstr "لیگ خلیج فارس"
 
+msgid "Recommended: the League Table block"
+msgstr "پیشنهادی: بلوک جدول لیگ"
+
 #: includes/iranianleaguetable-class.php:164
 msgid "Show Logo:"
 msgstr "نمایش لوگو:"
@@ -141,6 +147,9 @@ msgstr "نوع جدول:"
 #: includes/iranianleaguetable-class.php:225
 msgid "Text Color:"
 msgstr "رنگ متن:"
+
+msgid "The easiest way to show a table is the block editor. In a post or page, click + and add the League Table block, then choose a saved table or set the league, mode and colors in the block sidebar. The editor shows the real table while you work, and no shortcode is needed. The block also works in block-based widget areas."
+msgstr "ساده‌ترین راه نمایش جدول، ویرایشگر بلوک است. در یک نوشته یا برگه روی + بزنید و بلوک «جدول لیگ» را اضافه کنید، سپس یک جدول ذخیره‌شده را انتخاب کنید یا لیگ، نوع نمایش و رنگ‌ها را در نوار کناری بلوک تنظیم کنید. ویرایشگر همان جدول واقعی را نشان می‌دهد و نیازی به کد کوتاه نیست. این بلوک در ابزارک‌های بلوکی هم کار می‌کند."
 
 #: includes/iranianleaguetable-class.php:136
 msgid "Title Background Color:"
@@ -496,9 +505,6 @@ msgstr "جدول ذخیره شد."
 msgid "The action could not be completed."
 msgstr "این کار انجام نشد."
 
-msgid "The easiest way to make a table is the Shortcode Builder: pick the options, check the preview, and copy the shortcode into any post, page or widget."
-msgstr "ساده‌ترین راه ساختن جدول، سازنده کد کوتاه است: تنظیمات را انتخاب کنید، پیش‌نمایش را ببینید و کد کوتاه را در هر نوشته، برگه یا ابزارکی قرار دهید."
-
 msgid "The preview could not be loaded."
 msgstr "پیش‌نمایش بارگذاری نشد."
 
@@ -683,3 +689,4 @@ msgstr "استفاده از رنگ‌های تیره وقتی دستگاه با�
 
 msgid "Zones"
 msgstr "رنگ‌بندی جدول"
+

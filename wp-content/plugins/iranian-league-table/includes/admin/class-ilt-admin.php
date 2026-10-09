@@ -214,9 +214,13 @@ final class ILT_Admin {
 		?>
 		<div class="wrap ilt-admin">
 			<h1><?php esc_html_e( 'League Table Help', 'iranian-league-table' ); ?></h1>
+			<h2><?php esc_html_e( 'Recommended: the League Table block', 'iranian-league-table' ); ?></h2>
+			<p><?php esc_html_e( 'The easiest way to show a table is the block editor. In a post or page, click + and add the League Table block, then choose a saved table or set the league, mode and colors in the block sidebar. The editor shows the real table while you work, and no shortcode is needed. The block also works in block-based widget areas.', 'iranian-league-table' ); ?></p>
+
+			<h2><?php esc_html_e( 'Shortcode Builder', 'iranian-league-table' ); ?></h2>
 			<p>
-				<?php esc_html_e( 'The easiest way to make a table is the Shortcode Builder: pick the options, check the preview, and copy the shortcode into any post, page or widget.', 'iranian-league-table' ); ?>
-				<a class="button button-primary" href="<?php echo esc_url( self::url( self::MENU_SLUG ) ); ?>"><?php esc_html_e( 'Open the Shortcode Builder', 'iranian-league-table' ); ?></a>
+				<?php esc_html_e( 'For the classic editor, classic widgets or page builders, use the Shortcode Builder: pick the options, check the preview, and copy the shortcode into any post, page or widget.', 'iranian-league-table' ); ?>
+				<a class="button" href="<?php echo esc_url( self::url( self::MENU_SLUG ) ); ?>"><?php esc_html_e( 'Open the Shortcode Builder', 'iranian-league-table' ); ?></a>
 			</p>
 
 			<h2><?php esc_html_e( 'Example of Using Shortcode', 'iranian-league-table' ); ?></h2>
