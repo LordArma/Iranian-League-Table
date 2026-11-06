@@ -1,7 +1,14 @@
 /**
  * Mirrors ILT_Attributes::sanitize_value() so the editor shows the same values the server renders.
  */
-const data = window.iltBlock || { schema: {}, defaults: {}, presets: {}, tables: [], aliases: {}, i18n: {} };
+const data = window.iltBlock || {
+	schema: {},
+	defaults: {},
+	presets: {},
+	tables: [],
+	aliases: {},
+	i18n: {},
+};
 
 export default data;
 
@@ -24,7 +31,9 @@ export function normalize( key, value ) {
 		}
 		case 'enum': {
 			const v = String( value ).trim().toLowerCase();
-			return Object.prototype.hasOwnProperty.call( field.choices, v ) ? v : invalid;
+			return Object.prototype.hasOwnProperty.call( field.choices, v )
+				? v
+				: invalid;
 		}
 		case 'bool': {
 			if ( typeof value === 'boolean' ) {
@@ -41,13 +50,22 @@ export function normalize( key, value ) {
 		}
 		case 'int': {
 			const v = String( value ).trim();
-			if ( ! /^\d+(\.\d+)?(px)?$/i.test( v ) || ( parseInt( v, 10 ) === 0 && field.min > 0 ) ) {
+			if (
+				! /^\d+(\.\d+)?(px)?$/i.test( v ) ||
+				( parseInt( v, 10 ) === 0 && field.min > 0 )
+			) {
 				return invalid;
 			}
-			return Math.max( field.min, Math.min( field.max, parseInt( v, 10 ) ) );
+			return Math.max(
+				field.min,
+				Math.min( field.max, parseInt( v, 10 ) )
+			);
 		}
 		case 'text':
-			return String( value ).replace( /["'[\]]/g, '' ).trim().slice( 0, 60 );
+			return String( value )
+				.replace( /["'[\]]/g, '' )
+				.trim()
+				.slice( 0, 60 );
 		case 'color': {
 			const v = String( value ).trim();
 			if (
@@ -63,13 +81,25 @@ export function normalize( key, value ) {
 	return invalid;
 }
 
-/** Base values for a block: the saved table's values, or the defaults. */
+/**
+ * Base values for a block: the saved table's values, or the defaults.
+ *
+ * @param {number} tableId Saved table ID, or 0 for none.
+ * @return {Object} Values by option key.
+ */
 export function baseValues( tableId ) {
-	const table = tableId ? data.tables.find( ( t ) => t.id === tableId ) : null;
+	const table = tableId
+		? data.tables.find( ( t ) => t.id === tableId )
+		: null;
 	return table ? table.values : data.defaults;
 }
 
-/** Effective values: base + the block's own options. */
+/**
+ * Effective values: base + the block's own options.
+ *
+ * @param {Object} attributes Block attributes.
+ * @return {Object} Values by option key.
+ */
 export function effectiveValues( attributes ) {
 	const values = { ...baseValues( attributes.tableId ) };
 	Object.keys( attributes.options || {} ).forEach( ( key ) => {
@@ -80,7 +110,13 @@ export function effectiveValues( attributes ) {
 	return values;
 }
 
-/** Keeps only options that differ from the base, so saved tables can still restyle the block. */
+/**
+ * Keeps only options that differ from the base, so saved tables can still restyle the block.
+ *
+ * @param {Object} values  Values by option key.
+ * @param {number} tableId Saved table ID, or 0 for none.
+ * @return {Object} Options that differ from the base.
+ */
 export function minimalOptions( values, tableId ) {
 	const base = baseValues( tableId );
 	const out = {};
@@ -92,7 +128,12 @@ export function minimalOptions( values, tableId ) {
 	return out;
 }
 
-/** Block attributes from shortcode attributes (named, lower-cased keys). */
+/**
+ * Block attributes from shortcode attributes (named, lower-cased keys).
+ *
+ * @param {Object} named Named shortcode attributes.
+ * @return {Object} Block attributes: tableId and options.
+ */
 export function fromShortcodeAttributes( named ) {
 	const atts = {};
 	Object.keys( named || {} ).forEach( ( k ) => {
@@ -105,5 +146,11 @@ export function fromShortcodeAttributes( named ) {
 			values[ key ] = normalize( key, atts[ key ] );
 		}
 	} );
-	return { tableId, options: minimalOptions( { ...baseValues( tableId ), ...values }, tableId ) };
+	return {
+		tableId,
+		options: minimalOptions(
+			{ ...baseValues( tableId ), ...values },
+			tableId
+		),
+	};
 }
