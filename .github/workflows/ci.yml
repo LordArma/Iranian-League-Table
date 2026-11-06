@@ -65,6 +65,18 @@ jobs:
       - name: Committed build/ matches src/
         run: git diff --exit-code -- wp-content/plugins/iranian-league-table/build
 
+  js-lint:
+    name: JavaScript lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run lint:js
+
   integration:
     name: Integration tests (WordPress + multisite)
     runs-on: ubuntu-latest

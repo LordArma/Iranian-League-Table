@@ -15,7 +15,11 @@ registerBlockType( metadata.name, {
 				// Pasting or converting a classic paragraph that holds the shortcode.
 				type: 'shortcode',
 				tag: 'iran_league',
-				transform: ( attrs ) => createBlock( metadata.name, fromShortcodeAttributes( attrs.named ) ),
+				transform: ( attrs ) =>
+					createBlock(
+						metadata.name,
+						fromShortcodeAttributes( attrs.named )
+					),
 			},
 			{
 				// A Shortcode block that contains only [iran_league ...].
@@ -24,7 +28,12 @@ registerBlockType( metadata.name, {
 				isMatch: ( { text } ) => SHORTCODE_ONLY.test( text || '' ),
 				transform: ( { text } ) => {
 					const match = nextShortcode( 'iran_league', text );
-					return createBlock( metadata.name, fromShortcodeAttributes( match ? match.shortcode.attrs.named : {} ) );
+					return createBlock(
+						metadata.name,
+						fromShortcodeAttributes(
+							match ? match.shortcode.attrs.named : {}
+						)
+					);
 				},
 			},
 		],

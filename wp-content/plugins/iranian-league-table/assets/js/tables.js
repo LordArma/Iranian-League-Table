@@ -4,9 +4,9 @@
 ( function () {
 	'use strict';
 
-	var cfg = window.iltTables || {};
-	var toast = document.getElementById( 'ilt-toast' );
-	var timer = null;
+	const cfg = window.iltTables || {};
+	const toast = document.getElementById( 'ilt-toast' );
+	let timer = null;
 
 	function show( text, isError ) {
 		if ( ! toast ) {
@@ -22,17 +22,17 @@
 	}
 
 	function fallbackCopy( text ) {
-		var area = document.createElement( 'textarea' );
+		const area = document.createElement( 'textarea' );
 		area.value = text;
 		area.setAttribute( 'readonly', '' );
 		area.style.position = 'fixed';
 		area.style.opacity = '0';
 		document.body.appendChild( area );
 		area.select();
-		var ok = false;
+		let ok = false;
 		try {
 			ok = document.execCommand( 'copy' );
-		} catch ( e ) {
+		} catch {
 			ok = false;
 		}
 		document.body.removeChild( area );
@@ -40,13 +40,13 @@
 	}
 
 	document.addEventListener( 'click', function ( event ) {
-		var copy = event.target.closest( '.ilt-copy' );
+		const copy = event.target.closest( '.ilt-copy' );
 		if ( copy ) {
-			var text = copy.getAttribute( 'data-shortcode' );
-			var done = function () {
+			const text = copy.getAttribute( 'data-shortcode' );
+			const done = function () {
 				show( cfg.copied );
 			};
-			var fail = function () {
+			const fail = function () {
 				if ( fallbackCopy( text ) ) {
 					done();
 				} else {
@@ -61,7 +61,8 @@
 			return;
 		}
 
-		var del = event.target.closest( '.ilt-delete' );
+		const del = event.target.closest( '.ilt-delete' );
+		// eslint-disable-next-line no-alert -- Confirms a destructive action.
 		if ( del && ! window.confirm( cfg.confirmDelete ) ) {
 			event.preventDefault();
 		}
