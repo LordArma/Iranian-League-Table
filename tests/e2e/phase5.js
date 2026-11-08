@@ -53,8 +53,8 @@ const check = (name, ok, extra = '') => { results.push(ok); console.log((ok ? ' 
   check('highlighted team', (await t1.locator('tr.ilt-row--highlight .ilt-team-name').innerText()).trim() === 'پرسپولیس');
   check('legend with two items', await t1.locator('.ilt-legend li').count() === 2);
   check('updated footer in Persian calendar', /به‌روزرسانی: [۰-۹]+ (فروردین|اردیبهشت|خرداد|تیر|مرداد|شهریور|مهر|آبان|آذر|دی|بهمن|اسفند) [۰-۹]{4}/.test(await t1.locator('.ilt-updated').innerText()), await t1.locator('.ilt-updated').innerText());
-  check('team links to varzesh3', (await t1.locator('a.ilt-team-name').first().getAttribute('href')).startsWith('https://www.varzesh3.com/'));
-  check('source link', (await t1.locator('.ilt-source a').getAttribute('href')).startsWith('https://www.varzesh3.com/'));
+  check('team links to varzesh3', (await t1.locator('a.ilt-team-name').first().getAttribute('href')).startsWith('https://www.varzesh3.ir/'));
+  check('source link', (await t1.locator('.ilt-source a').getAttribute('href')).startsWith('https://www.varzesh3.ir/'));
   const t2 = anon.locator('.ilt').nth(1);
   check('around shows 5 rows with Sepahan in the middle', await t2.locator('tbody tr').count() === 5 && (await t2.locator('tbody tr').nth(2).innerText()).includes('سپاهان'));
   check('JSON-LD present', await anon.locator('script[type="application/ld+json"]').count() >= 1);

@@ -4,7 +4,7 @@ Tags: football, soccer, league table, standings, persian
 Requires at least: 6.0
 Tested up to: 7.1
 Requires PHP: 7.4
-Stable tag: 4.5.0
+Stable tag: 4.5.1
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 
@@ -12,7 +12,7 @@ Persian Gulf Pro League, Azadegan and Kowsar standings in Persian, as a block, w
 
 == Description ==
 
-Iranian League Table shows the standings of Iranian football leagues in Persian (RTL), using data from [Varzesh3](https://www.varzesh3.com/):
+Iranian League Table shows the standings of Iranian football leagues in Persian (RTL), using data from [Varzesh3](https://www.varzesh3.ir/):
 
 * Persian Gulf Pro League (لیگ برتر خلیج فارس)
 * League One / Azadegan (لیگ یک)
@@ -69,6 +69,9 @@ Yes. Override the CSS custom properties on `.ilt` (for example `--ilt-head-bg`),
 
 == Changelog ==
 
+= 4.5.1 =
+* Data now comes from varzesh3.ir (varzesh3.com is not available). Team and source links point to varzesh3.ir.
+
 = 4.5.0 =
 * Help and readme recommend the League Table block as the easiest way to add a table; new screenshots.
 * Build tools updated (@wordpress/scripts 36, @wordpress/env 11) to fix the security alerts in development dependencies. Nothing in the plugin itself changed for this; the release zip never included them.
@@ -97,6 +100,9 @@ Yes. Override the CSS custom properties on `.ilt` (for example `--ilt-head-bg`),
 * Security and reliability fixes.
 
 == Upgrade Notice ==
+
+= 4.5.1 =
+Tables load again: data now comes from varzesh3.ir.
 
 = 4.5.0 =
 Block editor is now the recommended way to add a table; development dependencies updated.

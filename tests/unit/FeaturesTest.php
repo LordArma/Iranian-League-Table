@@ -78,6 +78,14 @@ class FeaturesTest extends TestCase {
 		$this->assertStringContainsString( 'rel="noopener"', $html );
 	}
 
+	public function test_varzesh3_ir_and_com_links_are_allowed() {
+		$this->assertSame( 'https://www.varzesh3.ir/football/team/10', ILT_Renderer::varzesh3_url( 'https://www.varzesh3.ir/football/team/10' ) );
+		$this->assertSame( 'https://varzesh3.ir/', ILT_Renderer::varzesh3_url( 'https://varzesh3.ir/' ) );
+		$this->assertSame( 'https://www.varzesh3.com/x', ILT_Renderer::varzesh3_url( 'https://www.varzesh3.com/x' ), 'old cached links still work' );
+		$this->assertSame( '', ILT_Renderer::varzesh3_url( 'https://evilvarzesh3.ir/x' ) );
+		$this->assertSame( '', ILT_Renderer::varzesh3_url( 'https://varzesh3.ir.evil.example/x' ) );
+	}
+
 	public function test_footer_updated_and_source() {
 		$ts   = gmmktime( 3, 40, 0, 10, 9, 2026 );
 		$html = $this->render( array( 'show_updated' => 'true', 'show_source' => 'true' ), 'persiangulf', array( 'updated' => $ts ) );

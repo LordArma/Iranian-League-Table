@@ -14,7 +14,7 @@ final class ILT_Leagues {
 
 	const DEFAULT_SLUG = 'persiangulf';
 
-	const API_URL = 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/%d/standing';
+	const API_URL = 'https://web-api.varzesh3.ir/v1.0/developer-tools/football/leagues/%d/standing';
 
 	/**
 	 * All leagues, filterable through `ilt_leagues`.

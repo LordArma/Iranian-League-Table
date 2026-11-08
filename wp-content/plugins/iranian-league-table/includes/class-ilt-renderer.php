@@ -183,7 +183,7 @@ final class ILT_Renderer {
 			'rows'          => $rows,
 			'legend'        => $legend,
 			'updated'       => $values['show_updated'] && $updated ? ILT_Jalali::format( $updated, $fa ) : '',
-			'source'        => $values['show_source'] ? self::varzesh3_url( isset( $data->link ) ? $data->link : '', 'https://www.varzesh3.com/' ) : '',
+			'source'        => $values['show_source'] ? self::varzesh3_url( isset( $data->link ) ? $data->link : '', 'https://www.varzesh3.ir/' ) : '',
 			'values'        => $values,
 		);
 	}
@@ -225,7 +225,7 @@ final class ILT_Renderer {
 	}
 
 	/**
-	 * Returns the URL if it points to varzesh3.com over http(s), otherwise `$fallback`.
+	 * Returns the URL if it points to varzesh3.ir (or the old varzesh3.com) over http(s), otherwise `$fallback`.
 	 *
 	 * @param mixed  $url      URL from the API.
 	 * @param string $fallback Fallback URL.
@@ -236,7 +236,12 @@ final class ILT_Renderer {
 			return $fallback;
 		}
 		$host = strtolower( (string) wp_parse_url( $url, PHP_URL_HOST ) );
-		return ( 'varzesh3.com' === $host || '.varzesh3.com' === substr( $host, -13 ) ) ? $url : $fallback;
+		foreach ( array( 'varzesh3.ir', 'varzesh3.com' ) as $domain ) {
+			if ( $domain === $host || substr( $host, -1 - strlen( $domain ) ) === '.' . $domain ) {
+				return $url;
+			}
+		}
+		return $fallback;
 	}
 
 	/**

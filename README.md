@@ -6,7 +6,7 @@ A WordPress plugin that helps WordPress sites display the Iranian Premier League
 
 The tables are displayed in Farsi and can be customized in color and display type to match their display location.
 
-These tables data are provided by the [Varzesh3](https://www.varzesh3.com/developer-tools) website.
+These tables data are provided by the [Varzesh3](https://www.varzesh3.ir/developer-tools) website.
 
 ![A Persian Gulf Pro League table with the top and bottom places colored, a highlighted team, a legend and the update time](docs/screenshots/front-end.png)
 

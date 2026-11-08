@@ -35,6 +35,6 @@ class LeaguesTest extends TestCase {
 	}
 
 	public function test_api_url() {
-		$this->assertSame( 'https://web-api.varzesh3.com/v1.0/developer-tools/football/leagues/54/standing', ILT_Leagues::api_url( 'kowsar' ) );
+		$this->assertSame( 'https://web-api.varzesh3.ir/v1.0/developer-tools/football/leagues/54/standing', ILT_Leagues::api_url( 'kowsar' ) );
 	}
 }
