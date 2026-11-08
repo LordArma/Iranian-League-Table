@@ -1,0 +1,8 @@
+{
+  "name": "deepmerge",
+  "version": "4.3.2+safe",
+  "private": true,
+  "description": "Dev-only shim for deepmerge 4.3.1 (GHSA-gcqx-w48m-w2h4, prototype poisoning, no patched release). Only @svgr/plugin-svgo lists it, and it never requires it. Same API (merge(a, b, options), merge.all), but never copies __proto__, constructor or prototype keys.",
+  "main": "index.js",
+  "license": "MIT"
+}

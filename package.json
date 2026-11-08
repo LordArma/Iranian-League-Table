@@ -15,6 +15,7 @@
   "devDependencies": {
     "@wordpress/env": "^11.17.0",
     "@wordpress/scripts": "^36.1.0",
+    "deepmerge": "file:tools/deepmerge-safe",
     "js-yaml": "file:tools/js-yaml-compat",
     "js-yaml-v4": "npm:js-yaml@^4.3.2",
     "simple-git": "file:tools/simple-git-cjs",
@@ -34,6 +35,11 @@
     },
     "markdownlint-cli": {
       "js-yaml": "^5.4.3"
-    }
+    },
+    "@svgr/plugin-svgo": {
+      "deepmerge": "$deepmerge"
+    },
+    "minimatch@>=7.0.0 <11.0.1": "^11.0.1",
+    "glob@>=9.0.0 <14.0.2": "^14.0.2"
   }
 }
